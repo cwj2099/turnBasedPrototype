@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Animator thisAnim;
+    public SpriteRenderer thisSpriteRenderer;
+    public GameObject boss;
     public int attackCounter = 0;
     public float moveTime = 0;
     public float actionTime = 0;
@@ -12,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float moveUnit = 5;
     public KeyCode storedInput;
     public float speed = 0;
+    public bool facing = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (boss.transform.position.x - this.transform.position.x<-0.1) { facing = true; }
+        else if(boss.transform.position.x - this.transform.position.x>0.1) { facing = false; }
+        thisSpriteRenderer.flipX = facing;
         if (moveTime <= 0.25f) {
             foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
@@ -34,6 +40,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (moveTime<=0) {
+            transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
             Time.timeScale = 0;
             speed = 0;
             if (storedInput==KeyCode.A)
@@ -98,9 +105,11 @@ public class PlayerController : MonoBehaviour
             if (storedInput == KeyCode.K)
             {
                 thisAnim.Play("Special");
-                moveTime = timeUnit * 4;
-                actionTime = timeUnit * 3;
-                speed = -moveUnit * 1 / timeUnit ;
+                moveTime = timeUnit * 3;
+                actionTime = timeUnit * 2;
+                if (boss.transform.position.x < this.transform.position.x) { speed = moveUnit * 1 / timeUnit; }
+                else { speed = -moveUnit * 1 / timeUnit; }
+                
                 storedInput = KeyCode.None;
             }
         }
@@ -108,10 +117,12 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 1;
             moveTime -= Time.deltaTime;
-            if (actionTime >= 0)
+            if (actionTime > 0)
             {
                 actionTime -= Time.deltaTime;
                 transform.Translate(-speed * Time.deltaTime, 0, 0);
+                if (speed > 0) { thisSpriteRenderer.flipX = true; }
+                else { thisSpriteRenderer.flipX = false; }
             }
         }
     }

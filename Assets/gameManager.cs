@@ -25,6 +25,7 @@ public class gameManager : MonoBehaviour
             //时间恢复正常
             Time.timeScale = 1;
             player.wholeTurn();
+            boss.wholeTurn();
 
             //回合数归零之前一直计时
             if (betweenTurn > 0)
@@ -35,7 +36,27 @@ public class gameManager : MonoBehaviour
             else
             {
                 player.endTurn();
+                boss.endTurn();
+                boss.halfTurn();
+                //敌人打玩家
+                int dir;
+                if (boss.thisSpriteRenderer.flipX) { dir = 1; } else { dir = -1; }
+
+                if (boss.attakcing && !player.invicible && player.hurtTurns <= 0 && (((Mathf.Abs(player.position - boss.position) < Mathf.Abs(boss.attackRange * dir))
+                    && (Mathf.Sign(player.position - boss.position) == Mathf.Sign(boss.attackRange * dir)))
+                    || player.position == boss.position))
+                {
+                    //print("hitted");
+                    Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
+                    player.attackTurns = 0; player.waitTurns = 0; player.moveTurns = 0;player.attackCounter = 0;
+                    player.transform.position = new Vector3(player.position * player.moveUnit, player.transform.position.y, player.transform.position.z);
+                    player.turns = 4;
+                    player.hurtTurns = 4;
+                    player.thisAnim.Play("Hurt");
+                }
+
                 betweenTurn = timeUnit;
+
             }
             //半回合计时
             if (halfTurn > 0)
@@ -63,7 +84,9 @@ public class gameManager : MonoBehaviour
                 {
                     //print("hitted");
                     Instantiate(player.hitEffect, boss.transform.position, transform.rotation);
+                    boss.hitted = true;
                 }
+                
             }
         }
     }

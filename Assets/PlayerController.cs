@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public float moveTurns = 0;//移动回合
     public float attackTurns = 0;//攻击回合
     public float invicibleTurns = 0;//无敌回合
+    public float hurtTurns = 0;//挨打回合
     public float waitTurns = 0;//等待回合
     public KeyCode storedInput; //储存输入
 
@@ -30,80 +31,33 @@ public class PlayerController : MonoBehaviour
     public int attackRange = 0;//攻击范围
     public bool invicible = false;//是否有无敌判定
 
+    public Color nColor;
+    public Color iColor;
+
     // Start is called before the first frame update
     void Start()
     {
         timeUnit = GM.timeUnit;
         speedUnit *= moveUnit / timeUnit;
-
+        thisAnim.SetFloat("unit", 1 / timeUnit);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //计时环节   
-        /*if (turns > 0)
-        {
-            //时间恢复正常
-            Time.timeScale = 1;
-            //回合数归零之前一直计时
-            if (betweenTurn > 0)
-            {
-                betweenTurn -= Time.unscaledDeltaTime;
-            }
-            //回合结束一次
-            else
-            {
-                //每回合定位一次
-                transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
-                turns--;
-                //如果需要等待，先等待。如果等待结束，则移动
-                if (waitTurns > 0) { waitTurns--; }
-                else {
-                    if (moveTurns > 0) { moveTurns--; position += speed; }
-                    if (attackTurns > 0) { attackTurns--; }
-                    if (invicibleTurns > 0) { invicibleTurns--; }
-                }
-
-                //伤害检查
-                int dir;
-                if (thisSpriteRenderer.flipX) { dir = -1; } else { dir = 1; }
-                if (attakcing && (Mathf.Abs(boss.position - position) <Mathf.Abs(attackRange*dir))&&(Mathf.Sign(boss.position - position)== Mathf.Sign(attackRange * dir)))
-                {
-                    print("hitted");
-                    Instantiate(hitEffect, boss.transform.position,transform.rotation);
-                }
-                //重新开始计时
-                betweenTurn = timeUnit;
-            }
-            //如果开始行动
-            if (waitTurns == 0)
-            {
-                //如果仍在移动
-                if (moveTurns > 0)
-                {
-                    transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
-                    if (speed < 0) { thisSpriteRenderer.flipX = true; }
-                    else { thisSpriteRenderer.flipX = false; }
-                }
-                //是否在攻击/无敌
-                attakcing = (attackTurns > 0);
-                invicible = (invicibleTurns > 0);
-            }
-
-
-        }*/
+        if (invicible) { thisSpriteRenderer.color = iColor; }
+        else { thisSpriteRenderer.color = nColor; }
         //更新回合数
         turnText.text = turns.ToString();
-        //不是正在进行移动的时候，自动转向
-        if (moveTurns <= 0)
+        //不是正在进行移动或者攻击的时候，自动转向
+        if (moveTurns <= 0&&attackTurns<=0)
         {
             if (boss.position<position) { facing = true; }
             else if (boss.position>position) { facing = false; }
             thisSpriteRenderer.flipX = facing;
         }
         //还有1回合结束时，允许提前输入
-        if (turns<=2) {
+        if (turns<=1) {
             foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
                 if (Input.GetKeyDown(vKey))
@@ -180,6 +134,7 @@ public class PlayerController : MonoBehaviour
                 attackCounter++;
                 if (attackCounter == 3) { attackCounter = 0; }
             }
+            else if(storedInput!=KeyCode.None){ attackCounter = 0; }
 
             if (storedInput == KeyCode.K)
             {
@@ -208,7 +163,6 @@ public class PlayerController : MonoBehaviour
     public void halfTurn()
      //回合过半时执行一次
     {
-        if (waitTurns > 0) { waitTurns-=0.5f; }
         //如果不再等待
         if (waitTurns ==0) {
             //根据速度更新抽象位置
@@ -241,10 +195,11 @@ public class PlayerController : MonoBehaviour
     //每次回合结束执行一次
     {
         //实际位置重定位
-        transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
+        transform.position = new Vector3(position * moveUnit, transform.position.y, transform.position.z);
         turns--;
         //回合数更新
-        if (waitTurns > 0) { waitTurns -= 0.5f; }
+        if (hurtTurns > 0) { hurtTurns--; }
+        if (waitTurns > 0) { waitTurns --; }
         else
         {
             if (moveTurns > 0) { moveTurns--; }

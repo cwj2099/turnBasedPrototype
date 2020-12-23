@@ -319,6 +319,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 693590323}
   position: 2
+--- !u!1 &458392313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458392315}
+  - component: {fileID: 458392314}
+  m_Layer: 0
+  m_Name: gameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &458392314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458392313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512e9908ba2d3cd4ca3ca9e10fc24a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 693590323}
+  boss: {fileID: 405871517}
+  betweenTurn: -1
+  halfTurn: -1
+  timeUnit: 0.2
+--- !u!4 &458392315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458392313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.527939, y: 11.853883, z: -1716.1466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,13 +567,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisAnim: {fileID: 693590320}
   thisSpriteRenderer: {fileID: 693590322}
+  GM: {fileID: 458392314}
   boss: {fileID: 405871517}
   hitEffect: {fileID: 4856430269409844847, guid: 3b8c3fabdcdaf3b4e92239381fb14752, type: 3}
   turnText: {fileID: 1141655075}
   attackCounter: 0
   turns: 0
-  betweenTurn: 0
-  timeUnit: 0.25
+  timeUnit: 0.125
   speedUnit: 1
   moveUnit: 2
   moveTurns: 0

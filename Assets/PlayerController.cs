@@ -7,20 +7,20 @@ public class PlayerController : MonoBehaviour
 {
     public Animator thisAnim;
     public SpriteRenderer thisSpriteRenderer;
+    public gameManager GM;
     public BossController boss;
     public GameObject hitEffect;
     public Text turnText;
     public int attackCounter = 0;
 
     public int turns = 0;//回合数
-    public float betweenTurn = -1;//回合之间的计时变量
     public float timeUnit = 0.25f; //一回合的时间单位
     public float speedUnit = 1;//一回合移动几个移动单位
     public float moveUnit = 5; //移动单位
-    public int moveTurns = 0;//移动回合
-    public int attackTurns = 0;//攻击回合
-    public int invicibleTurns = 0;//无敌回合
-    public int waitTurns = 0;//等待回合
+    public float moveTurns = 0;//移动回合
+    public float attackTurns = 0;//攻击回合
+    public float invicibleTurns = 0;//无敌回合
+    public float waitTurns = 0;//等待回合
     public KeyCode storedInput; //储存输入
 
     public int position = 0;//当前抽象位置
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeUnit = GM.timeUnit;
         speedUnit *= moveUnit / timeUnit;
 
     }
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //计时环节   
-        if (turns > 0)
+        /*if (turns > 0)
         {
             //时间恢复正常
             Time.timeScale = 1;
@@ -91,7 +92,7 @@ public class PlayerController : MonoBehaviour
             }
 
 
-        }
+        }*/
         //更新回合数
         turnText.text = turns.ToString();
         //不是正在进行移动的时候，自动转向
@@ -102,7 +103,7 @@ public class PlayerController : MonoBehaviour
             thisSpriteRenderer.flipX = facing;
         }
         //还有1回合结束时，允许提前输入
-        if (turns<=1) {
+        if (turns<=2) {
             foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
             {
                 if (Input.GetKeyDown(vKey))
@@ -183,7 +184,7 @@ public class PlayerController : MonoBehaviour
             if (storedInput == KeyCode.K)
             {
                 startTurns(3);
-                waitTurns = 2;
+                waitTurns = 1;
                 moveTurns = 1;
                 attackTurns = 1;
                 thisAnim.Play("PreSpecial");
@@ -195,10 +196,61 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    
     void startTurns(int amount)
+    //初始化回合，并非真的回合开始
     {
         turns = amount;
-        betweenTurn = timeUnit;
+        GM.betweenTurn = timeUnit;
+        GM.halfTurn = timeUnit / 2;
+    }
+
+    public void halfTurn()
+     //回合过半时执行一次
+    {
+        if (waitTurns > 0) { waitTurns-=0.5f; }
+        //如果不再等待
+        if (waitTurns ==0) {
+            //根据速度更新抽象位置
+            if (moveTurns > 0) { position += speed; }
+            //更新攻击与无敌状态
+            attakcing = (attackTurns > 0);
+            invicible = (invicibleTurns > 0);
+        }
+    }
+
+    public void wholeTurn()
+     //只要有回合，就会进行下去
+    {
+        //如果不在等待
+        if (waitTurns == 0)
+        {
+            //如果在移动，根据速度改变实际位置
+            if (moveTurns > 0)
+            {
+                transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
+                if (speed < 0) { thisSpriteRenderer.flipX = true; }
+                else { thisSpriteRenderer.flipX = false; }
+            }
+
+        }
+        
+    }
+
+    public void endTurn()
+    //每次回合结束执行一次
+    {
+        //实际位置重定位
+        transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
+        turns--;
+        //回合数更新
+        if (waitTurns > 0) { waitTurns -= 0.5f; }
+        else
+        {
+            if (moveTurns > 0) { moveTurns--; }
+            if (attackTurns > 0) { attackTurns--; }
+            if (invicibleTurns > 0) { invicibleTurns--; }
+        }
     }
 }
 

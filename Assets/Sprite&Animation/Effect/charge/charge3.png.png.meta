@@ -1,0 +1,4732 @@
+fileFormatVersion: 2
+guid: 6dd396829f2a8db4caaeb5103114e501
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4851645775497792379
+    second: charge3.png_0
+  - first:
+      213: 3896490553804410037
+    second: charge3.png_1
+  - first:
+      213: 4035548042383217961
+    second: charge3.png_2
+  - first:
+      213: -5291395259708115085
+    second: charge3.png_3
+  - first:
+      213: -8293626951789358805
+    second: charge3.png_4
+  - first:
+      213: -5381268674031678654
+    second: charge3.png_5
+  - first:
+      213: 8903117175474089281
+    second: charge3.png_6
+  - first:
+      213: -4298611984859568041
+    second: charge3.png_7
+  - first:
+      213: 1329961609296251043
+    second: charge3.png_8
+  - first:
+      213: 2985384583404346912
+    second: charge3.png_9
+  - first:
+      213: 8245790713919813954
+    second: charge3.png_10
+  - first:
+      213: 2537230498002509445
+    second: charge3.png_11
+  - first:
+      213: 2259115795033693956
+    second: charge3.png_12
+  - first:
+      213: 5349148613179653762
+    second: charge3.png_13
+  - first:
+      213: 7976948094140310123
+    second: charge3.png_14
+  - first:
+      213: -5569862660268204498
+    second: charge3.png_15
+  - first:
+      213: 3602312081189883868
+    second: charge3.png_16
+  - first:
+      213: 5749719617512128425
+    second: charge3.png_17
+  - first:
+      213: 7226016708024037189
+    second: charge3.png_18
+  - first:
+      213: 6400158322754241825
+    second: charge3.png_19
+  - first:
+      213: 5529897679309511027
+    second: charge3.png_20
+  - first:
+      213: -2334464190199552336
+    second: charge3.png_21
+  - first:
+      213: -7226838470726810178
+    second: charge3.png_22
+  - first:
+      213: -8130439759305380799
+    second: charge3.png_23
+  - first:
+      213: -4287969378866227855
+    second: charge3.png_24
+  - first:
+      213: -8345199616432723832
+    second: charge3.png_25
+  - first:
+      213: -3273015043867066122
+    second: charge3.png_26
+  - first:
+      213: 2422295227711928155
+    second: charge3.png_27
+  - first:
+      213: -9091132700549335941
+    second: charge3.png_28
+  - first:
+      213: -2934043946216647519
+    second: charge3.png_29
+  - first:
+      213: 4471020253269649310
+    second: charge3.png_30
+  - first:
+      213: -7351140506917955190
+    second: charge3.png_31
+  - first:
+      213: -7698760535794921641
+    second: charge3.png_32
+  - first:
+      213: 1474354093507468095
+    second: charge3.png_33
+  - first:
+      213: -6404781263405912814
+    second: charge3.png_34
+  - first:
+      213: -3768518570958650903
+    second: charge3.png_35
+  - first:
+      213: 142361308482278685
+    second: charge3.png_36
+  - first:
+      213: -2084690312500814553
+    second: charge3.png_37
+  - first:
+      213: -7432180053523473803
+    second: charge3.png_38
+  - first:
+      213: -612772813484330714
+    second: charge3.png_39
+  - first:
+      213: 8248057042288888636
+    second: charge3.png_40
+  - first:
+      213: 7053675109976754986
+    second: charge3.png_41
+  - first:
+      213: 8830422141297893681
+    second: charge3.png_42
+  - first:
+      213: 6898153129890143115
+    second: charge3.png_43
+  - first:
+      213: 8197493016571773950
+    second: charge3.png_44
+  - first:
+      213: -3034563904470104807
+    second: charge3.png_45
+  - first:
+      213: -7690266461976725254
+    second: charge3.png_46
+  - first:
+      213: 2865718022739735190
+    second: charge3.png_47
+  - first:
+      213: 697581835456206872
+    second: charge3.png_48
+  - first:
+      213: 6187323541536069982
+    second: charge3.png_49
+  - first:
+      213: -4919393043487839953
+    second: charge3.png_50
+  - first:
+      213: 6298403874705840437
+    second: charge3.png_51
+  - first:
+      213: -2327798237632165513
+    second: charge3.png_52
+  - first:
+      213: -5345537571965701131
+    second: charge3.png_53
+  - first:
+      213: 3709966954602331283
+    second: charge3.png_54
+  - first:
+      213: -7958880371372866989
+    second: charge3.png_55
+  - first:
+      213: 7916984030622598007
+    second: charge3.png_56
+  - first:
+      213: 3189963589935778168
+    second: charge3.png_57
+  - first:
+      213: 7977567704118906373
+    second: charge3.png_58
+  - first:
+      213: 6110196358357533285
+    second: charge3.png_59
+  - first:
+      213: -6225304095169030420
+    second: charge3.png_60
+  - first:
+      213: 3622263545665836966
+    second: charge3.png_61
+  - first:
+      213: 6506743917819442825
+    second: charge3.png_62
+  - first:
+      213: -2347208711249521954
+    second: charge3.png_63
+  - first:
+      213: -3444292562606742305
+    second: charge3.png_64
+  - first:
+      213: 5421823579853017798
+    second: charge3.png_65
+  - first:
+      213: 8378992961858864008
+    second: charge3.png_66
+  - first:
+      213: -4103225259276362836
+    second: charge3.png_67
+  - first:
+      213: -5067740622658766562
+    second: charge3.png_68
+  - first:
+      213: 6255753281128084069
+    second: charge3.png_69
+  - first:
+      213: -7876392048146973912
+    second: charge3.png_70
+  - first:
+      213: -2215688316536348122
+    second: charge3.png_71
+  - first:
+      213: -8544729760200354341
+    second: charge3.png_72
+  - first:
+      213: 2416958544861781293
+    second: charge3.png_73
+  - first:
+      213: 4659503950056799586
+    second: charge3.png_74
+  - first:
+      213: -1841098603702083351
+    second: charge3.png_75
+  - first:
+      213: -1991707397190960676
+    second: charge3.png_76
+  - first:
+      213: -5869528694689455819
+    second: charge3.png_77
+  - first:
+      213: -3268107644287085083
+    second: charge3.png_78
+  - first:
+      213: 2220655188621147946
+    second: charge3.png_79
+  - first:
+      213: -7591044716570611236
+    second: charge3.png_80
+  - first:
+      213: 7542865623238083656
+    second: charge3.png_81
+  - first:
+      213: 5911452160199778152
+    second: charge3.png_82
+  - first:
+      213: -1360902399153798217
+    second: charge3.png_83
+  - first:
+      213: 2775628632501609483
+    second: charge3.png_84
+  - first:
+      213: -8039970485197307975
+    second: charge3.png_85
+  - first:
+      213: 696158975297305191
+    second: charge3.png_86
+  - first:
+      213: -4111233185533735238
+    second: charge3.png_87
+  - first:
+      213: 2965596366416127361
+    second: charge3.png_88
+  - first:
+      213: 2453065045817080706
+    second: charge3.png_89
+  - first:
+      213: 7248004844360775593
+    second: charge3.png_90
+  - first:
+      213: -4594840539570310377
+    second: charge3.png_91
+  - first:
+      213: -4993465662967370828
+    second: charge3.png_92
+  - first:
+      213: 3062194998209019166
+    second: charge3.png_93
+  - first:
+      213: -8458734332067513096
+    second: charge3.png_94
+  - first:
+      213: -5929186945431924954
+    second: charge3.png_95
+  - first:
+      213: 269415528143115885
+    second: charge3.png_96
+  - first:
+      213: 8016276476822307011
+    second: charge3.png_97
+  - first:
+      213: 8764978060742375305
+    second: charge3.png_98
+  - first:
+      213: 6869616707116659614
+    second: charge3.png_99
+  - first:
+      213: 4156270576293600985
+    second: charge3.png_100
+  - first:
+      213: 3577990752956361358
+    second: charge3.png_101
+  - first:
+      213: -2198242151873166898
+    second: charge3.png_102
+  - first:
+      213: -5439292200472801361
+    second: charge3.png_103
+  - first:
+      213: -7940570966460942211
+    second: charge3.png_104
+  - first:
+      213: 5173958028723840396
+    second: charge3.png_105
+  - first:
+      213: -5549019391500349990
+    second: charge3.png_106
+  - first:
+      213: 6880748229392893842
+    second: charge3.png_107
+  - first:
+      213: 2076247870382783601
+    second: charge3.png_108
+  - first:
+      213: -7898283622336251584
+    second: charge3.png_109
+  - first:
+      213: 926093563080974961
+    second: charge3.png_110
+  - first:
+      213: 5276190928565788089
+    second: charge3.png_111
+  - first:
+      213: -1558360379293031465
+    second: charge3.png_112
+  - first:
+      213: -1943805538257204171
+    second: charge3.png_113
+  - first:
+      213: 7538499596924608073
+    second: charge3.png_114
+  - first:
+      213: -4398149830360950750
+    second: charge3.png_115
+  - first:
+      213: -3427069633741364891
+    second: charge3.png_116
+  - first:
+      213: -4615603631831237744
+    second: charge3.png_117
+  - first:
+      213: -4344711687745684492
+    second: charge3.png_118
+  - first:
+      213: -2070317008180324117
+    second: charge3.png_119
+  - first:
+      213: -7900321064589352538
+    second: charge3.png_120
+  - first:
+      213: -7618197734415102025
+    second: charge3.png_121
+  - first:
+      213: 6448988329587421364
+    second: charge3.png_122
+  - first:
+      213: -5632677692848282469
+    second: charge3.png_123
+  - first:
+      213: 4334336116145911406
+    second: charge3.png_124
+  - first:
+      213: -5284599983584713474
+    second: charge3.png_125
+  - first:
+      213: 8138629747612603145
+    second: charge3.png_126
+  - first:
+      213: 7242085847928124166
+    second: charge3.png_127
+  - first:
+      213: 6806771805723037080
+    second: charge3.png_128
+  - first:
+      213: 7574868890209592867
+    second: charge3.png_129
+  - first:
+      213: 9166258008356836738
+    second: charge3.png_130
+  - first:
+      213: 6509423418337641437
+    second: charge3.png_131
+  - first:
+      213: 309484286989114161
+    second: charge3.png_132
+  - first:
+      213: -6932115992145923961
+    second: charge3.png_133
+  - first:
+      213: 5718529211510252893
+    second: charge3.png_134
+  - first:
+      213: -4136195060179990423
+    second: charge3.png_135
+  - first:
+      213: 1459987325217392562
+    second: charge3.png_136
+  - first:
+      213: -7882707918026940348
+    second: charge3.png_137
+  - first:
+      213: -5606185528879125669
+    second: charge3.png_138
+  - first:
+      213: -3725314033185251705
+    second: charge3.png_139
+  - first:
+      213: 5538532376323039420
+    second: charge3.png_140
+  - first:
+      213: -4527806834665291605
+    second: charge3.png_141
+  - first:
+      213: -3583541962975825025
+    second: charge3.png_142
+  - first:
+      213: -6563766806943126278
+    second: charge3.png_143
+  - first:
+      213: -6390965423486693280
+    second: charge3.png_144
+  - first:
+      213: -888445448363388028
+    second: charge3.png_145
+  - first:
+      213: 231822838546699987
+    second: charge3.png_146
+  - first:
+      213: -284976926071707156
+    second: charge3.png_147
+  - first:
+      213: 6866356239106044318
+    second: charge3.png_148
+  - first:
+      213: 7832078697787247688
+    second: charge3.png_149
+  - first:
+      213: 3267773411722512008
+    second: charge3.png_150
+  - first:
+      213: -5723521209164705155
+    second: charge3.png_151
+  - first:
+      213: -2120414285741283854
+    second: charge3.png_152
+  - first:
+      213: 7496255065190374664
+    second: charge3.png_153
+  - first:
+      213: -6441447357466402298
+    second: charge3.png_154
+  - first:
+      213: 5099829957202685165
+    second: charge3.png_155
+  - first:
+      213: -7411715017168036388
+    second: charge3.png_156
+  - first:
+      213: 6869234731656077261
+    second: charge3.png_157
+  - first:
+      213: 8570381863012671536
+    second: charge3.png_158
+  - first:
+      213: -7240296760929708494
+    second: charge3.png_159
+  - first:
+      213: -5740033593667535930
+    second: charge3.png_160
+  - first:
+      213: -7963269421613524553
+    second: charge3.png_161
+  - first:
+      213: 8272937010805781029
+    second: charge3.png_162
+  - first:
+      213: -8960875624305974614
+    second: charge3.png_163
+  - first:
+      213: -7825704855956868207
+    second: charge3.png_164
+  - first:
+      213: 1973945040352960698
+    second: charge3.png_165
+  - first:
+      213: -4011464250271313035
+    second: charge3.png_166
+  - first:
+      213: 2454952566754709781
+    second: charge3.png_167
+  - first:
+      213: 8223633203688460753
+    second: charge3.png_168
+  - first:
+      213: 4949960610954913962
+    second: charge3.png_169
+  - first:
+      213: -2261762499654234298
+    second: charge3.png_0
+  - first:
+      213: 2424481358343086765
+    second: charge3.png_1
+  - first:
+      213: -1046080592819316725
+    second: charge3.png_2
+  - first:
+      213: -4121613445967985187
+    second: charge3.png_3
+  - first:
+      213: -6233920194041486063
+    second: charge3.png_4
+  - first:
+      213: 2523444947680608216
+    second: charge3.png_5
+  - first:
+      213: 6495112269658680606
+    second: charge3.png_6
+  - first:
+      213: 2046635512794856679
+    second: charge3.png_7
+  - first:
+      213: 6942351206718658764
+    second: charge3.png_8
+  - first:
+      213: 3254008783415042376
+    second: charge3.png_9
+  - first:
+      213: 149234366592525831
+    second: charge3.png_10
+  - first:
+      213: -8163121132513412570
+    second: charge3.png_11
+  - first:
+      213: 818424272506035064
+    second: charge3.png_12
+  - first:
+      213: 620647813309373655
+    second: charge3.png_13
+  - first:
+      213: 3455661469396961469
+    second: charge3.png_14
+  - first:
+      213: -4297842746397075349
+    second: charge3.png_15
+  - first:
+      213: -4430528948225115188
+    second: charge3.png_16
+  - first:
+      213: -7591382817577802486
+    second: charge3.png_17
+  - first:
+      213: 7483829253616683811
+    second: charge3.png_18
+  - first:
+      213: -7494625576260209879
+    second: charge3.png_19
+  - first:
+      213: 1492771392592807197
+    second: charge3.png_20
+  - first:
+      213: 7500206436937750085
+    second: charge3.png_21
+  - first:
+      213: 857716837323730645
+    second: charge3.png_22
+  - first:
+      213: 2783649958171252607
+    second: charge3.png_23
+  - first:
+      213: -6211629023567615345
+    second: charge3.png_24
+  - first:
+      213: -4566529627412564534
+    second: charge3.png_25
+  - first:
+      213: 3633214398299417798
+    second: charge3.png_26
+  - first:
+      213: -6545469384782199015
+    second: charge3.png_27
+  - first:
+      213: 7295707271572216256
+    second: charge3.png_28
+  - first:
+      213: 568668804563576545
+    second: charge3.png_29
+  - first:
+      213: -95577040038250328
+    second: charge3.png_30
+  - first:
+      213: -4941650966349452192
+    second: charge3.png_31
+  - first:
+      213: -8079480232231358211
+    second: charge3.png_32
+  - first:
+      213: -2693857207329076200
+    second: charge3.png_33
+  - first:
+      213: -8663318773268610343
+    second: charge3.png_34
+  - first:
+      213: 3817443972433455172
+    second: charge3.png_35
+  - first:
+      213: -6219909153797375063
+    second: charge3.png_36
+  - first:
+      213: 2982196559798619528
+    second: charge3.png_37
+  - first:
+      213: -1243872766098312225
+    second: charge3.png_38
+  - first:
+      213: 27428353169894802
+    second: charge3.png_39
+  - first:
+      213: -1262685312915442445
+    second: charge3.png_40
+  - first:
+      213: 1960452516078680046
+    second: charge3.png_41
+  - first:
+      213: 4934083689335764869
+    second: charge3.png_42
+  - first:
+      213: 3849346307482064156
+    second: charge3.png_43
+  - first:
+      213: 6433254820208853945
+    second: charge3.png_44
+  - first:
+      213: 5325968128388741482
+    second: charge3.png_45
+  - first:
+      213: -7045457773120043885
+    second: charge3.png_46
+  - first:
+      213: 6656092098951653468
+    second: charge3.png_47
+  - first:
+      213: 7284719711447297938
+    second: charge3.png_48
+  - first:
+      213: 9043526564784334282
+    second: charge3.png_49
+  - first:
+      213: 1949941654889025230
+    second: charge3.png_50
+  - first:
+      213: -1167330326405194105
+    second: charge3.png_51
+  - first:
+      213: 8377487829068538920
+    second: charge3.png_52
+  - first:
+      213: 9204046663389407814
+    second: charge3.png_53
+  - first:
+      213: -4755956611545685034
+    second: charge3.png_54
+  - first:
+      213: -2044640540964252957
+    second: charge3.png_55
+  - first:
+      213: -6587196483545010298
+    second: charge3.png_56
+  - first:
+      213: 5672566347085684016
+    second: charge3.png_57
+  - first:
+      213: -7009039630597673172
+    second: charge3.png_58
+  - first:
+      213: 605469893380891702
+    second: charge3.png_59
+  - first:
+      213: -8996936409456197146
+    second: charge3.png_60
+  - first:
+      213: 7082869023580002325
+    second: charge3.png_61
+  - first:
+      213: 4543379620162648273
+    second: charge3.png_62
+  - first:
+      213: -4064721613724168347
+    second: charge3.png_63
+  - first:
+      213: -8602298142336417881
+    second: charge3.png_64
+  - first:
+      213: 2927034722221216118
+    second: charge3.png_65
+  - first:
+      213: 7502621226853709535
+    second: charge3.png_66
+  - first:
+      213: 7129646159618466296
+    second: charge3.png_67
+  - first:
+      213: 7841624203678901447
+    second: charge3.png_68
+  - first:
+      213: -195745212809193758
+    second: charge3.png_69
+  - first:
+      213: 2311021819938304424
+    second: charge3.png_70
+  - first:
+      213: -8451296562291794733
+    second: charge3.png_71
+  - first:
+      213: 1980921923241483954
+    second: charge3.png_72
+  - first:
+      213: -3935381600408699180
+    second: charge3.png_73
+  - first:
+      213: 7041423344872765938
+    second: charge3.png_74
+  - first:
+      213: 3406983621670316647
+    second: charge3.png_75
+  - first:
+      213: 5961139574695518258
+    second: charge3.png_76
+  - first:
+      213: 3224058991579597102
+    second: charge3.png_77
+  - first:
+      213: -5687497543052662022
+    second: charge3.png_78
+  - first:
+      213: -9110263295210654637
+    second: charge3.png_79
+  - first:
+      213: -2365810851130356233
+    second: charge3.png_80
+  - first:
+      213: 4694887439167135524
+    second: charge3.png_81
+  - first:
+      213: 8605087806708318879
+    second: charge3.png_82
+  - first:
+      213: -472190355894647089
+    second: charge3.png_83
+  - first:
+      213: 620698364010797155
+    second: charge3.png_84
+  - first:
+      213: 63611588241483557
+    second: charge3.png_85
+  - first:
+      213: 4580321562476045631
+    second: charge3.png_86
+  - first:
+      213: 5705930708001137137
+    second: charge3.png_87
+  - first:
+      213: -7821898541545246415
+    second: charge3.png_88
+  - first:
+      213: -8334483284342874961
+    second: charge3.png_89
+  - first:
+      213: 8660107025249786907
+    second: charge3.png_90
+  - first:
+      213: 8836556664746703999
+    second: charge3.png_91
+  - first:
+      213: -340125087326762401
+    second: charge3.png_92
+  - first:
+      213: -4368490332711733105
+    second: charge3.png_93
+  - first:
+      213: 1529405058794487990
+    second: charge3.png_94
+  - first:
+      213: 4198945146596598062
+    second: charge3.png_95
+  - first:
+      213: -2305652213669691119
+    second: charge3.png_96
+  - first:
+      213: -9124251722507452727
+    second: charge3.png_97
+  - first:
+      213: 6117548160664150060
+    second: charge3.png_98
+  - first:
+      213: 4909439531442187897
+    second: charge3.png_99
+  - first:
+      213: -3653981793745194595
+    second: charge3.png_100
+  - first:
+      213: -2495331124709103395
+    second: charge3.png_101
+  - first:
+      213: 2890742855969954882
+    second: charge3.png_102
+  - first:
+      213: 4090589653782746657
+    second: charge3.png_103
+  - first:
+      213: -6789925300011460
+    second: charge3.png_104
+  - first:
+      213: -9174763991487404145
+    second: charge3.png_105
+  - first:
+      213: 4013853594649241470
+    second: charge3.png_106
+  - first:
+      213: -9000454770505812364
+    second: charge3.png_107
+  - first:
+      213: -1611475062353859513
+    second: charge3.png_108
+  - first:
+      213: 6018315026167512501
+    second: charge3.png_109
+  - first:
+      213: 2617663041031065769
+    second: charge3.png_110
+  - first:
+      213: 6587068150965326841
+    second: charge3.png_111
+  - first:
+      213: 4408965359091207468
+    second: charge3.png_112
+  - first:
+      213: 1112422538137674071
+    second: charge3.png_113
+  - first:
+      213: -5892607439061018284
+    second: charge3.png_114
+  - first:
+      213: -7650585263418242551
+    second: charge3.png_115
+  - first:
+      213: 3407717001754708981
+    second: charge3.png_116
+  - first:
+      213: -5088563205109436202
+    second: charge3.png_117
+  - first:
+      213: 1440580436562808921
+    second: charge3.png_118
+  - first:
+      213: -658921578958438459
+    second: charge3.png_119
+  - first:
+      213: 3880519586315956428
+    second: charge3.png_120
+  - first:
+      213: 6988738940315386093
+    second: charge3.png_121
+  - first:
+      213: -883000999256681588
+    second: charge3.png_122
+  - first:
+      213: 4137378758813202349
+    second: charge3.png_123
+  - first:
+      213: -3464073247924777909
+    second: charge3.png_124
+  - first:
+      213: 5715881552899421271
+    second: charge3.png_125
+  - first:
+      213: -1680436868675926916
+    second: charge3.png_126
+  - first:
+      213: 3200854652463201574
+    second: charge3.png_127
+  - first:
+      213: 806850766435356810
+    second: charge3.png_128
+  - first:
+      213: 4801691468589812270
+    second: charge3.png_129
+  - first:
+      213: 847818775826860017
+    second: charge3.png_130
+  - first:
+      213: -941174789639651698
+    second: charge3.png_131
+  - first:
+      213: 5952984987017125358
+    second: charge3.png_132
+  - first:
+      213: 7261198518430632827
+    second: charge3.png_133
+  - first:
+      213: 4444472600656904942
+    second: charge3.png_134
+  - first:
+      213: -7035324284964182437
+    second: charge3.png_135
+  - first:
+      213: 6435454226430838819
+    second: charge3.png_136
+  - first:
+      213: -1920818022625288081
+    second: charge3.png_137
+  - first:
+      213: -302842909553656716
+    second: charge3.png_138
+  - first:
+      213: -2160583744902564250
+    second: charge3.png_139
+  - first:
+      213: -1424613373987033132
+    second: charge3.png_140
+  - first:
+      213: -7457872990860998648
+    second: charge3.png_141
+  - first:
+      213: -7391361650285573622
+    second: charge3.png_142
+  - first:
+      213: -4515679850216747223
+    second: charge3.png_143
+  - first:
+      213: 6825773087520076226
+    second: charge3.png_144
+  - first:
+      213: -8859703107475629852
+    second: charge3.png_145
+  - first:
+      213: -7594494956467465076
+    second: charge3.png_146
+  - first:
+      213: 1627674039350334069
+    second: charge3.png_147
+  - first:
+      213: -7088555112952967733
+    second: charge3.png_148
+  - first:
+      213: -124866312607335383
+    second: charge3.png_149
+  - first:
+      213: -7112985108979465016
+    second: charge3.png_150
+  - first:
+      213: 5563985684243095164
+    second: charge3.png_151
+  - first:
+      213: 6242764976738494369
+    second: charge3.png_152
+  - first:
+      213: 5510236490420193269
+    second: charge3.png_153
+  - first:
+      213: 7443926349292731538
+    second: charge3.png_154
+  - first:
+      213: 5266628354571428004
+    second: charge3.png_155
+  - first:
+      213: -3486817830807877322
+    second: charge3.png_156
+  - first:
+      213: 5239005924773258588
+    second: charge3.png_157
+  - first:
+      213: 6163739102979047991
+    second: charge3.png_158
+  - first:
+      213: 2836570302905963187
+    second: charge3.png_159
+  - first:
+      213: -7278470617587347231
+    second: charge3.png_160
+  - first:
+      213: 3117094616610489388
+    second: charge3.png_161
+  - first:
+      213: -9042046943322092571
+    second: charge3.png_162
+  - first:
+      213: 8976078725579328854
+    second: charge3.png_163
+  - first:
+      213: -2831885880568938360
+    second: charge3.png_164
+  - first:
+      213: 5014227737920532839
+    second: charge3.png_165
+  - first:
+      213: 290400041209019546
+    second: charge3.png_166
+  - first:
+      213: 1153975097030336638
+    second: charge3.png_167
+  - first:
+      213: 466421083122052793
+    second: charge3.png_168
+  - first:
+      213: -7058428400111687557
+    second: charge3.png_169
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: charge3.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f4fc96dfa9c90e0800000000000000
+      internalID: -2261762499654234298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a89033fc75a120800000000000000
+      internalID: 2424481358343086765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0813924e339b71f0800000000000000
+      internalID: -1046080592819316725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5ca9b78661dc6c0800000000000000
+      internalID: -4121613445967985187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115e50cbc9aac79a0800000000000000
+      internalID: -6233920194041486063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfb1c46fc3150320800000000000000
+      internalID: 2523444947680608216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d69495236432a50800000000000000
+      internalID: 6495112269658680606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec36d4c72c176c10800000000000000
+      internalID: 2046635512794856679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8587ee3af285060800000000000000
+      internalID: 6942351206718658764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841647f7fbf882d20800000000000000
+      internalID: 3254008783415042376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7062701addf221200800000000000000
+      internalID: 149234366592525831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62abd0e7494c6be80800000000000000
+      internalID: -8163121132513412570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b97462a80ab5b00800000000000000
+      internalID: 818424272506035064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_13
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc9dead5ebfc9800800000000000000
+      internalID: 620647813309373655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8096b2cc9f4ff20800000000000000
+      internalID: 3455661469396961469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6853880bcefa54c0800000000000000
+      internalID: -4297842746397075349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbf4f145699382c0800000000000000
+      internalID: -4430528948225115188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05654c5c8df5a690800000000000000
+      internalID: -7591382817577802486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bcf7d1e07ebd760800000000000000
+      internalID: 7483829253616683811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923f3722fbdbdf790800000000000000
+      internalID: -7494625576260209879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150c5a2ca367b410800000000000000
+      internalID: 1492771392592807197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546d5cf3406161860800000000000000
+      internalID: 7500206436937750085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de6d8e4be837eb00800000000000000
+      internalID: 857716837323730645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_23
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7714d773e281a620800000000000000
+      internalID: 2783649958171252607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aeebd405cdbc9a0800000000000000
+      internalID: -6211629023567615345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_25
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5f6c59f7d60a0c0800000000000000
+      internalID: -4566529627412564534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca873ee35cb6230800000000000000
+      internalID: 3633214398299417798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_27
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917ccdf1642d925a0800000000000000
+      internalID: -6545469384782199015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9db43fb1f8f3560800000000000000
+      internalID: 7295707271572216256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6abdac34154e700800000000000000
+      internalID: 568668804563576545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a836df30317caef0800000000000000
+      internalID: -95577040038250328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c66cac0aabb6bb0800000000000000
+      internalID: -4941650966349452192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df03f04298befdf80800000000000000
+      internalID: -8079480232231358211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c4681842f7d9ad0800000000000000
+      internalID: -2693857207329076200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d20a57d975b5c780800000000000000
+      internalID: -8663318773268610343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_35
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4482ad631194af430800000000000000
+      internalID: 3817443972433455172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_36
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abf4b044917ea9a0800000000000000
+      internalID: -6219909153797375063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_37
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d403588f3e26920800000000000000
+      internalID: 2982196559798619528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_38
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd37dee3f40ecbee0800000000000000
+      internalID: -1243872766098312225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_39
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d277f11f1716000800000000000000
+      internalID: 27428353169894802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4729cd56a0a7ee0800000000000000
+      internalID: -1262685312915442445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_41
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7f3eb2d2de43b10800000000000000
+      internalID: 1960452516078680046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58738ea39f2697440800000000000000
+      internalID: 4934083689335764869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c151eea6210ab6530800000000000000
+      internalID: 3849346307482064156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b34e149c23874950800000000000000
+      internalID: 6433254820208853945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69b9a96bc3a9e940800000000000000
+      internalID: 5325968128388741482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_46
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944a29db71893e90800000000000000
+      internalID: -7045457773120043885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_47
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c582c4e9f703f5c50800000000000000
+      internalID: 6656092098951653468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_48
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f2a114bf5881560800000000000000
+      internalID: 7284719711447297938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_49
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac567cafe7f018d70800000000000000
+      internalID: 9043526564784334282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_50
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecec5689a959f0b10800000000000000
+      internalID: 1949941654889025230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ed31fb04fcccfe0800000000000000
+      internalID: -1167330326405194105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_52
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824e9c17bc0d24470800000000000000
+      internalID: 8377487829068538920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_53
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ae17bdca75bbf70800000000000000
+      internalID: 9204046663389407814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d326a1f8a27ffdb0800000000000000
+      internalID: -4755956611545685034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_55
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2967ec24aff93e0800000000000000
+      internalID: -2044640540964252957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fe89cd2b39594a0800000000000000
+      internalID: -6587196483545010298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_57
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d90e2c90109be40800000000000000
+      internalID: 5672566347085684016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f27996793eabe90800000000000000
+      internalID: -7009039630597673172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634692df8af076800800000000000000
+      internalID: 605469893380891702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1c59fd006742380800000000000000
+      internalID: -8996936409456197146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_61
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5189a1da9d76b4260800000000000000
+      internalID: 7082869023580002325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_62
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d83b8351b35d0f30800000000000000
+      internalID: 4543379620162648273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_63
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f4e176a353797c0800000000000000
+      internalID: -4064721613724168347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff80e9a6f7e9880800000000000000
+      internalID: -8602298142336417881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_65
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671da3f529aee9820800000000000000
+      internalID: 2927034722221216118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_66
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6bbe6514aae1860800000000000000
+      internalID: 7502621226853709535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_67
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1694e586791f260800000000000000
+      internalID: 7129646159618466296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_68
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4e262aaab03dc60800000000000000
+      internalID: 7841624203678901447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_69
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 900
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6560c14c2984df0800000000000000
+      internalID: -195745212809193758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a17995d916621020800000000000000
+      internalID: 2311021819938304424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc1e11bd86f6ba80800000000000000
+      internalID: -8451296562291794733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be979a6ef5ad7b10800000000000000
+      internalID: 1980921923241483954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4def704f847b269c0800000000000000
+      internalID: -3935381600408699180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9b840a93928b160800000000000000
+      internalID: 7041423344872765938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aab3d8d89084f20800000000000000
+      internalID: 3406983621670316647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230ef361cd83ab250800000000000000
+      internalID: 5961139574695518258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29810032982ebc20800000000000000
+      internalID: 3224058991579597102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa60754e13f111b0800000000000000
+      internalID: -5687497543052662022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35470be1dc7d19180800000000000000
+      internalID: -9110263295210654637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd4c94c093fa2fd0800000000000000
+      internalID: -2365810851130356233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_81
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f10085047972140800000000000000
+      internalID: 4694887439167135524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_82
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9205ebb4c96b6770800000000000000
+      internalID: 8605087806708318879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_83
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 800
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6c8828f517279f0800000000000000
+      internalID: -472190355894647089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368978b9fd92d9800800000000000000
+      internalID: 620698364010797155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5276bb8076ef1e000800000000000000
+      internalID: 63611588241483557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3562788132909f30800000000000000
+      internalID: 4580321562476045631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_87
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1a6636fb98f2f40800000000000000
+      internalID: 5705930708001137137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_88
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131bc0af7b8037390800000000000000
+      internalID: -7821898541545246415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_89
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facdf426c97f55c80800000000000000
+      internalID: -8334483284342874961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_90
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cd0ecc471ee2870800000000000000
+      internalID: 8660107025249786907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_91
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c76dfe771c1aa70800000000000000
+      internalID: 8836556664746703999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_92
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a80bef802a74bf0800000000000000
+      internalID: -340125087326762401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_93
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f883df900310063c0800000000000000
+      internalID: -4368490332711733105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0812f3cc9893510800000000000000
+      internalID: 1529405058794487990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_95
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21ad362d56a54a30800000000000000
+      internalID: 4198945146596598062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_96
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11100ac078da000e0800000000000000
+      internalID: -2305652213669691119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_97
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 700
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce72b69665206180800000000000000
+      internalID: -9124251722507452727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c202bb4d3a5e5e450800000000000000
+      internalID: 6117548160664150060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_99
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e2fd51e35d12440800000000000000
+      internalID: 4909439531442187897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_100
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91b2101be27a4dc0800000000000000
+      internalID: -3653981793745194595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_101
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8ecba109dce5dd0800000000000000
+      internalID: -2495331124709103395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_102
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c561bcf4bfd1820800000000000000
+      internalID: 2890742855969954882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_103
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126db930e91b4c830800000000000000
+      internalID: 4090589653782746657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_104
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ef0725990e7eff0800000000000000
+      internalID: -6789925300011460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_105
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87295d72c0bca080800000000000000
+      internalID: -9174763991487404145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_106
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e772e79f39214b730800000000000000
+      internalID: 4013853594649241470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_107
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476f70b9216f71380800000000000000
+      internalID: -9000454770505812364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_108
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c6ffff7f3e2a9e0800000000000000
+      internalID: -1611475062353859513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_109
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd3c1141a9558350800000000000000
+      internalID: 6018315026167512501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_110
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a05356baaec35420800000000000000
+      internalID: 2617663041031065769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_111
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3d3916597f96b50800000000000000
+      internalID: 6587068150965326841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d42a762aacf2d30800000000000000
+      internalID: 4408965359091207468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_113
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751a5d1976e107f00800000000000000
+      internalID: 1112422538137674071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_114
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45991f921c0493ea0800000000000000
+      internalID: -5892607439061018284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_115
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a0e1acc39a3d590800000000000000
+      internalID: -7650585263418242551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_116
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb06a8ee84aa4f20800000000000000
+      internalID: 3407717001754708981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_117
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0345ea9bac169b0800000000000000
+      internalID: -5088563205109436202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_118
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95014b74648fdf310800000000000000
+      internalID: 1440580436562808921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_119
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfb757a05a0bd6f0800000000000000
+      internalID: -658921578958438459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_120
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0fe4ef0006ad530800000000000000
+      internalID: 3880519586315956428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_121
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0407dc90dfcf060800000000000000
+      internalID: 6988738940315386093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c839dfef443feb3f0800000000000000
+      internalID: -883000999256681588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_123
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7be447f0cea6930800000000000000
+      internalID: 4137378758813202349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_124
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c82850cb32defc0800000000000000
+      internalID: -3464073247924777909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_125
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 500
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75437c20df3e25f40800000000000000
+      internalID: 5715881552899421271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c740a1f3293eda8e0800000000000000
+      internalID: -1680436868675926916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_127
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62db9b9f858bb6c20800000000000000
+      internalID: 3200854652463201574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_128
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8091284f72823b00800000000000000
+      internalID: 806850766435356810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_129
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ac15243f803a240800000000000000
+      internalID: 4801691468589812270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_130
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f701174fae04cb00800000000000000
+      internalID: 847818775826860017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_131
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eb9ffe38640f2f0800000000000000
+      internalID: -941174789639651698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_132
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed93603e404d9250800000000000000
+      internalID: 5952984987017125358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_133
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b86aeb495f4c460800000000000000
+      internalID: 7261198518430632827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_134
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee28c105840fdad30800000000000000
+      internalID: 4444472600656904942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_135
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56e70b66d18d5e90800000000000000
+      internalID: -7035324284964182437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_136
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32842beb5835f4950800000000000000
+      internalID: 6435454226430838819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_137
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6060437f22e755e0800000000000000
+      internalID: -1920818022625288081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_138
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cfe417af51ccbf0800000000000000
+      internalID: -302842909553656716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_139
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666799108801402e0800000000000000
+      internalID: -2160583744902564250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df6b3d2fa1ca3ce0800000000000000
+      internalID: -1424613373987033132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_141
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80800cf3700508890800000000000000
+      internalID: -7457872990860998648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_142
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a884c7dbb9c6990800000000000000
+      internalID: -7391361650285573622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_143
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f0170f9151551c0800000000000000
+      internalID: -4515679850216747223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_144
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c13e0765740abe50800000000000000
+      internalID: 6825773087520076226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_145
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e89d77e6f20c0580800000000000000
+      internalID: -8859703107475629852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_146
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84d24f031fea9690800000000000000
+      internalID: -7594494956467465076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_147
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5721a9d3ae8a69610800000000000000
+      internalID: 1627674039350334069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_148
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdc8a97ea460ad90800000000000000
+      internalID: -7088555112952967733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_149
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c70a010c2644ef0800000000000000
+      internalID: -124866312607335383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_150
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4c2a6cab9994d90800000000000000
+      internalID: -7112985108979465016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_151
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e1ba4208f373d40800000000000000
+      internalID: 5563985684243095164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_152
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a76fb6bba1c2a650800000000000000
+      internalID: 6242764976738494369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_153
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f704efb4ea487c40800000000000000
+      internalID: 5510236490420193269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c73c733932e4760800000000000000
+      internalID: 7443926349292731538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_155
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0ea3ea592d61940800000000000000
+      internalID: 5266628354571428004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_156
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639c23628a55c9fc0800000000000000
+      internalID: -3486817830807877322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_157
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55e6429120b4b840800000000000000
+      internalID: 5239005924773258588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_158
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7324049ae000a8550800000000000000
+      internalID: 6163739102979047991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_159
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2d12569a58d5720800000000000000
+      internalID: 2836570302905963187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_160
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0969a498dadfa90800000000000000
+      internalID: -7278470617587347231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_161
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24c95ae905224b20800000000000000
+      internalID: 3117094616610489388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_162
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb41ec3632348280800000000000000
+      internalID: -9042046943322092571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_163
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dc81a2b00719c70800000000000000
+      internalID: 8976078725579328854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_164
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8808e3cabce13b8d0800000000000000
+      internalID: -2831885880568938360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_165
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761f9a5af8d169540800000000000000
+      internalID: 5014227737920532839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_166
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cb5038c45b70400800000000000000
+      internalID: 290400041209019546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_167
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e32a9c3eb30010800000000000000
+      internalID: 1153975097030336638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be2e3ff08f097600800000000000000
+      internalID: 466421083122052793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3.png_169
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7860da64cc6b0e90800000000000000
+      internalID: -7058428400111687557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

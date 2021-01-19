@@ -5,12 +5,20 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public float Hp;
+    public float Mp;
+    public float damage;
+
     public Animator thisAnim;
     public SpriteRenderer thisSpriteRenderer;
     public gameManager GM;
     public BossController boss;
+    public ButtonInput bInput;
     public GameObject hitEffect;
+    public GameObject hitEffect2;
+    public GameObject chargeEffect;
     public Text turnText;
+    public Image healthBar;
     public int attackCounter = 0;
 
     public int turns = 0;//回合数
@@ -34,6 +42,10 @@ public class PlayerController : MonoBehaviour
     public Color nColor;
     public Color iColor;
 
+    public Image attackButton;
+    public Sprite a2;
+    public Sprite a3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,12 +57,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthBar.fillAmount = Mp / 3;
+      //  if (GM.gameOver) { thisAnim.Play("idle"); }
         if (invicible) { thisSpriteRenderer.color = iColor; }
         else { thisSpriteRenderer.color = nColor; }
+        if (attackCounter == 2) { attackButton.sprite = a3; attackButton.rectTransform.sizeDelta = new Vector2(270, 270); }
+        else { attackButton.sprite = a2; attackButton.rectTransform.sizeDelta = new Vector2(250, 250); }
         //更新回合数
         turnText.text = turns.ToString();
         //不是正在进行移动或者攻击的时候，自动转向
-        if (moveTurns <= 0&&attackTurns<=0)
+        if (moveTurns <= 0&&attackTurns<=0&&!GM.gameOver)
         {
             if (boss.position<position) { facing = true; }
             else if (boss.position>position) { facing = false; }
@@ -58,15 +74,27 @@ public class PlayerController : MonoBehaviour
         }
         //还有1回合结束时，允许提前输入
         if (turns<=1) {
-            foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+            if (bInput.theInput != KeyCode.None)
             {
-                if (Input.GetKeyDown(vKey))
+                storedInput = bInput.theInput;
+            }
+            else
+            {
+                foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
                 {
-                    //your code here
-                    storedInput = vKey;
+                    if (Input.GetKeyDown(vKey))
+                    {
+                        //your code here
+                        storedInput = vKey;
+                        if (storedInput == KeyCode.Mouse0)
+                        {
+                            storedInput = KeyCode.None;
+                        }
 
+                    }
                 }
             }
+            
         }
         //零回合时，根据储存的输入执行新行动
         if (turns==0) {
@@ -77,36 +105,38 @@ public class PlayerController : MonoBehaviour
             if (storedInput==KeyCode.A)
             {
                 thisAnim.Play("Move");
-                startTurns(1);
-                speed = -1;
+                startTurns(2);
+                speed = -2;
                 moveTurns = 1;
             }
 
             if (storedInput == KeyCode.D)
             {
                 thisAnim.Play("Move");
-                startTurns(1);
-                speed = 1;
+                startTurns(2);
+                speed = 2;
                 moveTurns = 1;
             }
 
-            if (storedInput == KeyCode.LeftShift)
+            /*if (storedInput == KeyCode.LeftShift)
             {
                 thisAnim.Play("Avoid");
                 startTurns(3);
                 invicibleTurns=2;
                 speed = -1;
                 moveTurns = 2;
-            }
+            }*/
 
-            if (storedInput == KeyCode.L)
+
+            /*if (storedInput == KeyCode.L)
             {
                 thisAnim.Play("Avoid");
                 startTurns(3);
                 invicibleTurns = 2;
-                speed = 1;
-                moveTurns = 2;
-            }
+                if (thisSpriteRenderer.flipX) { speed = 2; }
+                else { speed = -2; }
+                moveTurns = 1   ;
+            }*/
 
             if (storedInput == KeyCode.J)
             {
@@ -115,37 +145,54 @@ public class PlayerController : MonoBehaviour
                 {
                     thisAnim.Play("Attack1");
                     startTurns(2);
+                    if (Mathf.Abs(boss.position - position) > 1)
+                    {
+                        thisAnim.Play("Special");
+                        moveTurns = 1;
+                        if (thisSpriteRenderer.flipX) { speed = boss.position - position+1; }
+                        else { speed = boss.position - position-1; }
+                    }
                     attackTurns = 1;
+                    damage = 1;
                 }
                 if (attackCounter == 1)
                 {
                     thisAnim.Play("Attack2");
                     startTurns(2);
                     attackTurns = 1;
+                    damage = 2;
                 }
                 if (attackCounter == 2)
                 {
                     thisAnim.Play("Attack3");
-                    startTurns(3);
-                    waitTurns = 1;
+                    startTurns(2);
+                    //waitTurns = 1;
                     attackTurns = 1;
+                    damage = 3;
                 }
                 attackRange = 2;
                 attackCounter++;
                 if (attackCounter == 3) { attackCounter = 0; }
+                
             }
             else if(storedInput!=KeyCode.None){ attackCounter = 0; }
 
             if (storedInput == KeyCode.K)
             {
-                startTurns(3);
-                waitTurns = 1;
+                /*damage = 1;
+                startTurns(2);
+                //waitTurns = 1;
                 moveTurns = 1;
                 attackTurns = 1;
-                thisAnim.Play("PreSpecial");
+                thisAnim.Play("Special");
                 if (thisSpriteRenderer.flipX) { speed = -2; }
                 else { speed = 2; }
-                attackRange = -3;
+                attackRange = -3;*/
+                startTurns(2);
+                thisAnim.Play("Charge");
+                Mp++;
+                Mp = Mathf.Min(Mp, 3);
+                Instantiate(chargeEffect, transform.position, transform.rotation);
             }
             storedInput = KeyCode.None;
         }
@@ -166,7 +213,7 @@ public class PlayerController : MonoBehaviour
         //如果不再等待
         if (waitTurns ==0) {
             //根据速度更新抽象位置
-            if (moveTurns > 0) { position += speed; }
+            if (moveTurns > 0) { position += speed; position = Mathf.Max(-4, position);position = Mathf.Min(4, position); }
             //更新攻击与无敌状态
             attakcing = (attackTurns > 0);
             invicible = (invicibleTurns > 0);
@@ -183,6 +230,8 @@ public class PlayerController : MonoBehaviour
             if (moveTurns > 0)
             {
                 transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
+                transform.position = new Vector3(Mathf.Max(-8, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Min(8, transform.position.x), transform.position.y, transform.position.z);
                 if (speed < 0) { thisSpriteRenderer.flipX = true; }
                 else { thisSpriteRenderer.flipX = false; }
             }

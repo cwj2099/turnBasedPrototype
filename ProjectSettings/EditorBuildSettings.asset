@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Battle1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/YouWin.unity
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YouLose.unity
     guid: e7b50bf72e162904eae6188287829f24
+  - enabled: 1
+    path: Assets/Scenes/out1.unity
+    guid: 5b458d329f84cd446837246e62391270
   m_configObjects: {}

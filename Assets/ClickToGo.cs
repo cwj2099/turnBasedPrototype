@@ -4,24 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ClickToGo : MonoBehaviour
+public class ClickToGo : button
 {
     public string toGo;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    public void go()
+    public override void GetClicked()
     {
+        base.GetClicked();
         SceneManager.LoadScene(toGo);
+        Messenger Mes= FindObjectOfType<Messenger>();
+        Mes.CamLocation = Cam.location;
+        Mes.CamPosition = Cam.gameObject.transform.position;
     }
 
 }

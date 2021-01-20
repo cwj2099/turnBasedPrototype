@@ -6,6 +6,7 @@ public class L2Event : MonoBehaviour
 {
     Messenger Mes;
     public GameObject stone;
+    public GameObject button;
     public GameObject text1;
     public GameObject textController1;
     public GameObject textController2;
@@ -20,7 +21,7 @@ public class L2Event : MonoBehaviour
     void Update()
     {
         stone.SetActive(!Mes.stoneCleared);
-        if (Mes.stoneCleared) { text1.SetActive(false); }
+        if (Mes.stoneCleared) { text1.SetActive(false); button.SetActive(false); }
         textController1.SetActive(!Mes.stoneCleared);
         textController2.SetActive(Mes.stoneCleared);
         thisLocator.noRight = (!Mes.stoneCleared);

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Messenger : MonoBehaviour
 {
+    public bool theFirst = false;
     public Vector3 CamPosition;
     public Vector3 PlayerPosition;
     public int CamLocation;
@@ -14,6 +15,11 @@ public class Messenger : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        if(FindObjectOfType<Messenger>()&& FindObjectOfType<Messenger>().theFirst)
+        {
+            Destroy(this.gameObject);
+        }
+        theFirst = true;
     }
 
     // Update is called once per frame

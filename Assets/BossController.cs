@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BossController : MonoBehaviour
 {
     public float Hp;
+    public float MaxHp;
     public float damage;
 
     public PlayerController player;
@@ -48,7 +49,7 @@ public class BossController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         pre1.enabled = false;
         if (thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
@@ -173,7 +174,7 @@ public class BossController : MonoBehaviour
         turns = amount;
     }
 
-    public void halfTurn()
+    public virtual void halfTurn()
     //回合过半时执行一次
     {
         //如果不再等待
@@ -187,7 +188,7 @@ public class BossController : MonoBehaviour
         }
     }
 
-    public void wholeTurn()
+    public virtual void wholeTurn()
     //只要有回合，就会进行下去
     {
         //如果不在等待
@@ -205,7 +206,7 @@ public class BossController : MonoBehaviour
 
     }
 
-    public void endTurn()
+    public virtual void endTurn()
     //每次回合结束执行一次
     {
         //实际位置重定位

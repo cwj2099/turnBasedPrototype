@@ -109,7 +109,7 @@ public class gameManager : MonoBehaviour
                     if (player.Mp > 0) { player.Mp--; player.damage *= 2; Instantiate(player.hitEffect2, boss.transform.position, transform.rotation); }
                     boss.hitted = true;
                     boss.Hp -= player.damage;
-                    boss.healthBar.fillAmount = boss.Hp / 40;
+                    boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
                     if (!gameOver&&boss.Hp <= 0)
                     {
                         gameOver = true;

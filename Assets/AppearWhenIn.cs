@@ -16,6 +16,6 @@ public class AppearWhenIn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        toAppear.SetActive(Cam.locators[Cam.location] == locator && Cam.changeCounter <= 0.1);
+        toAppear.SetActive(Cam.locators[Cam.location] == locator && Cam.changeCounter <= 0.01);
     }
 }

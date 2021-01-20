@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
         Messenger Mes = FindObjectOfType<Messenger>();
         location = Mes.CamLocation;
         transform.position = Mes.CamPosition;
+        player.transform.position = Mes.PlayerPosition;
     }
 
     // Update is called once per frame
@@ -42,18 +43,23 @@ public class CameraController : MonoBehaviour
             }
         }
         player.transform.position = new Vector3(transform.position.x, player.transform.position.y, player.transform.position.z);
-
+        
         //切换后的一些表现更改
-        if (changeCounter <= 0)
+        if (changeCounter <= 0.01)
         {
-            LButton.SetActive(!(location == startlocation));
-            RButton.SetActive(!(location == endlocation));
+            LButton.SetActive(!locators[location].GetComponent<Locator>().noLeft);
+            RButton.SetActive(!locators[location].GetComponent<Locator>().noRight);
+        }
+        else
+        {
+            LButton.SetActive(false);
+            RButton.SetActive(false);
         }
     }
 
     public void GoLeft()
     {
-        if (changeCounter <= 0.1)
+        if (changeCounter <= 0.01)
         {
             location -= 1;
             location = Mathf.Max(startlocation, location);
@@ -65,7 +71,7 @@ public class CameraController : MonoBehaviour
 
     public void GoRight()
     {
-        if (changeCounter <= 0.1)
+        if (changeCounter <= 0.01)
         {
             location += 1;
             location = Mathf.Min(endlocation, location);

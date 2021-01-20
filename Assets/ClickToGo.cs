@@ -14,8 +14,10 @@ public class ClickToGo : button
         base.GetClicked();
         SceneManager.LoadScene(toGo);
         Messenger Mes= FindObjectOfType<Messenger>();
+        GameObject Player = GameObject.FindGameObjectsWithTag("Player")[0];
         Mes.CamLocation = Cam.location;
         Mes.CamPosition = Cam.gameObject.transform.position;
+        Mes.PlayerPosition = Player.transform.position;
     }
 
 }

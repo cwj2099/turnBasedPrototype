@@ -1966,7 +1966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 499237109}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 499237111}
+        m_TargetAssemblyTypeName: ClickToGo, Assembly-CSharp
+        m_MethodName: GetClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &499237109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2988,7 +3000,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: b559284c9d2306a4e8fb65b73cd80af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7068b30b714fa6646a6bd50dcf7e4577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3007,8 +3019,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062315354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.99, y: -2.405, z: -3.4182284}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: -15.25, y: -0.61, z: -3.4182284}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -4971,7 +4983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theFirst: 0
   CamPosition: {x: 0, y: 0, z: 0}
-  PlayerPosition: {x: -13.99, y: -2.405, z: -3.4182284}
+  PlayerPosition: {x: -13.99, y: -0.61, z: -3.4182284}
   CamLocation: 0
   stoneCleared: 0
   monsterCleared: 0

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool inEvent = false;
     public GameObject player;
+    public Animator pAnimator;
     public GameObject LButton;
     public GameObject RButton;
     public int location = 0;
@@ -42,8 +44,14 @@ public class CameraController : MonoBehaviour
                 transform.position = locators[location].transform.position;
             }
         }
-        player.transform.position = new Vector3(transform.position.x, player.transform.position.y, player.transform.position.z);
-        
+        if (!inEvent)
+        {
+            player.transform.position = new Vector3(transform.position.x, player.transform.position.y, player.transform.position.z);
+            if (changeCounter <= 0.01)
+            {
+                pAnimator.Play("idle");
+            }
+        }
         //切换后的一些表现更改
         if (changeCounter <= 0.01)
         {
@@ -61,6 +69,7 @@ public class CameraController : MonoBehaviour
     {
         if (changeCounter <= 0.01)
         {
+            pAnimator.Play("player_move");
             location -= 1;
             location = Mathf.Max(startlocation, location);
             changeCounter = changeDuration;
@@ -73,6 +82,7 @@ public class CameraController : MonoBehaviour
     {
         if (changeCounter <= 0.01)
         {
+            pAnimator.Play("player_move");
             location += 1;
             location = Mathf.Min(endlocation, location);
             changeCounter = changeDuration;

@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1062315354}
+  pAnimator: {fileID: 1062315357}
   LButton: {fileID: 124702208}
   RButton: {fileID: 365154042}
   location: 0
@@ -2953,6 +2954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062315356}
   - component: {fileID: 1062315355}
+  - component: {fileID: 1062315357}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3000,7 +3002,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 7068b30b714fa6646a6bd50dcf7e4577, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 182f4045ca99e85419153f344b3f878a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3019,12 +3021,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062315354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.25, y: -0.61, z: -3.4182284}
+  m_LocalPosition: {x: -15.25, y: -0.8, z: -3.4182284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1062315357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062315354}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43643be525b3c3449b5a0432434746bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1064233757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,7 +5004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theFirst: 0
   CamPosition: {x: 0, y: 0, z: 0}
-  PlayerPosition: {x: -13.99, y: -0.61, z: -3.4182284}
+  PlayerPosition: {x: -13.99, y: -0.8, z: -3.4182284}
   CamLocation: 0
   stoneCleared: 0
   monsterCleared: 0

@@ -61,8 +61,8 @@ public class PlayerController : MonoBehaviour
       //  if (GM.gameOver) { thisAnim.Play("idle"); }
         if (invicible) { thisSpriteRenderer.color = iColor; }
         else { thisSpriteRenderer.color = nColor; }
-        if (attackCounter == 2) { attackButton.sprite = a3; attackButton.rectTransform.sizeDelta = new Vector2(270, 270); }
-        else { attackButton.sprite = a2; attackButton.rectTransform.sizeDelta = new Vector2(250, 250); }
+        /*if (attackCounter == 2) { attackButton.sprite = a3; attackButton.rectTransform.sizeDelta = new Vector2(270, 270); }
+        else { attackButton.sprite = a2; attackButton.rectTransform.sizeDelta = new Vector2(250, 250); }*/
         //更新回合数
         turnText.text = turns.ToString();
         //不是正在进行移动或者攻击的时候，自动转向
@@ -145,13 +145,13 @@ public class PlayerController : MonoBehaviour
                 {
                     thisAnim.Play("Attack1");
                     startTurns(2);
-                    if (Mathf.Abs(boss.position - position) > 1)
+                    /*if (Mathf.Abs(boss.position - position) > 1)
                     {
                         thisAnim.Play("Special");
                         moveTurns = 1;
                         if (thisSpriteRenderer.flipX) { speed = boss.position - position+1; }
                         else { speed = boss.position - position-1; }
-                    }
+                    }*/
                     attackTurns = 1;
                     damage = 1;
                 }
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
                     attackTurns = 1;
                     damage = 3;
                 }
-                attackRange = 2;
+                attackRange = 3;
                 attackCounter++;
                 if (attackCounter == 3) { attackCounter = 0; }
                 
@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
         //如果不再等待
         if (waitTurns ==0) {
             //根据速度更新抽象位置
-            if (moveTurns > 0) { position += speed; position = Mathf.Max(-4, position);position = Mathf.Min(4, position); }
+            if (moveTurns > 0) { position += speed; position = Mathf.Max(-3, position);position = Mathf.Min(3, position); }
             //更新攻击与无敌状态
             attakcing = (attackTurns > 0);
             invicible = (invicibleTurns > 0);
@@ -230,10 +230,13 @@ public class PlayerController : MonoBehaviour
             if (moveTurns > 0)
             {
                 transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
-                transform.position = new Vector3(Mathf.Max(-8, transform.position.x), transform.position.y, transform.position.z);
-                transform.position = new Vector3(Mathf.Min(8, transform.position.x), transform.position.y, transform.position.z);
-                if (speed < 0) { thisSpriteRenderer.flipX = true; }
-                else { thisSpriteRenderer.flipX = false; }
+                transform.position = new Vector3(Mathf.Max(-6, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Min(6, transform.position.x), transform.position.y, transform.position.z);
+                if (!thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge"))
+                {
+                    if (speed < 0) { thisSpriteRenderer.flipX = true; }
+                    else { thisSpriteRenderer.flipX = false; }
+                }
             }
 
         }

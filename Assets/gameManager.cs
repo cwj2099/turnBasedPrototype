@@ -61,12 +61,21 @@ public class gameManager : MonoBehaviour
                 {
                     //print("hitted");
                     Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
-                    player.attackTurns = 0; player.waitTurns = 0; player.moveTurns = 0;player.attackCounter = 0;
-                    player.transform.position = new Vector3(player.position * player.moveUnit, player.transform.position.y, player.transform.position.z);
-                    player.turns = 2;
-                    player.hurtTurns = 2;
-                    player.thisAnim.Play("Hurt");
-                    player.Hp = 0;
+                    if (player.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge")) {
+                        player.turns = 3;
+                        player.moveTurns = 1;
+                        if (!boss.facing) { player.speed = -2; }
+                        else { player.speed = 2; }
+                    }
+                    else
+                    {
+                        player.attackTurns = 0; player.waitTurns = 0; player.moveTurns = 0; player.attackCounter = 0;
+                        player.transform.position = new Vector3(player.position * player.moveUnit, player.transform.position.y, player.transform.position.z);
+                        player.turns = 2;
+                        player.hurtTurns = 2;
+                        player.thisAnim.Play("Hurt");
+                        player.Hp = 0;
+                    }
                     //player.healthBar.fillAmount = player.Hp / 3;
                     if (!gameOver && player.Hp <= 0)
                     {
@@ -102,7 +111,7 @@ public class gameManager : MonoBehaviour
                 //如果玩家和敌人重合，或者玩家攻击距离弥补了两者之间的距离且两个数值方向一致时，造成伤害
                 if (player.attakcing && (((Mathf.Abs(boss.position - player.position) < Mathf.Abs(player.attackRange * dir)) 
                     && (Mathf.Sign(boss.position - player.position) == Mathf.Sign(player.attackRange * dir)))
-                    ||player.position==boss.position))
+                    ||player.position==boss.position)&&(!boss.invicible))
                 {
                     //print("hitted");
                     Instantiate(player.hitEffect, boss.transform.position, transform.rotation);

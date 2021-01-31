@@ -18,7 +18,7 @@ public class EndScreen : MonoBehaviour
         {
             if (Input.GetKeyDown(vKey))
             {
-                SceneManager.LoadScene("out1");
+                SceneManager.LoadScene("Battle2");
             }
         }
     }

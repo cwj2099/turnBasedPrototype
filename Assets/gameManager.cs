@@ -26,7 +26,6 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //计时环节   
         if (player.turns > 0&&!gameOver)
         {
@@ -62,10 +61,19 @@ public class gameManager : MonoBehaviour
                     //print("hitted");
                     Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
                     if (player.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge")) {
-                        player.turns = 3;
-                        player.moveTurns = 1;
-                        if (!boss.facing) { player.speed = -2; }
-                        else { player.speed = 2; }
+                        if (!(player.position==3||player.position==-3)) {
+                            player.turns = 1;
+                            player.thisAnim.Play("Charge");
+                            player.moveTurns = 1;
+                            player.Mp++;
+                            if (!boss.facing) { player.speed = -1*boss.pushBack; }
+                            else { player.speed = boss.pushBack; }
+                        }
+                        else
+                        {
+                            player.thisAnim.Play("Hurt");
+                            player.turns = 3;
+                        }
                     }
                     else
                     {
@@ -115,7 +123,7 @@ public class gameManager : MonoBehaviour
                 {
                     //print("hitted");
                     Instantiate(player.hitEffect, boss.transform.position, transform.rotation);
-                    if (player.Mp > 0) { player.Mp--; player.damage *= 2; Instantiate(player.hitEffect2, boss.transform.position, transform.rotation); }
+                    if (player.Mp > 0) { player.Mp--; /*player.damage *= 2;*/ Instantiate(player.hitEffect2, boss.transform.position, transform.rotation); }
                     boss.hitted = true;
                     boss.Hp -= player.damage;
                     boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;

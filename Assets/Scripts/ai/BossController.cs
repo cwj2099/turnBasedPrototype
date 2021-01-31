@@ -34,6 +34,7 @@ public class BossController : MonoBehaviour
     public bool facing = true;//面朝方向
     public bool attakcing = false;//是否有攻击判定
     public int attackRange = 0;//攻击范围
+    public int pushBack = 1;
     public bool invicible = false;//是否有无敌判定
     bool lastAct=false;
 
@@ -203,8 +204,8 @@ public class BossController : MonoBehaviour
             if (moveTurns > 0)
             {
                 transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
-                transform.position = new Vector3(Mathf.Max(-6, transform.position.x), transform.position.y, transform.position.z);
-                transform.position = new Vector3(Mathf.Min(6, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Max(-7.5f, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Min(7.5f, transform.position.x), transform.position.y, transform.position.z);
                 if (speed > 0) { thisSpriteRenderer.flipX = true; }
                 else { thisSpriteRenderer.flipX = false; }
             }

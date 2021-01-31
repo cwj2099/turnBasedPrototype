@@ -96,6 +96,11 @@ public class PlayerController : MonoBehaviour
             }
             
         }
+        //板边防御结束被破防
+        if (thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge") && turns==1&&(position==-3||position==3)) {
+            
+        }
+
         //零回合时，根据储存的输入执行新行动
         if (turns==0) {
             //时间暂停
@@ -153,14 +158,18 @@ public class PlayerController : MonoBehaviour
                         else { speed = boss.position - position-1; }
                     }*/
                     attackTurns = 1;
-                    damage = 1;
+                    attackRange = 3;
+                    damage = 2;
+                    if (Mp > 0) { thisAnim.Play("Attack1_enhanced"); damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 1)
                 {
                     thisAnim.Play("Attack2");
                     startTurns(2);
                     attackTurns = 1;
+                    attackRange = 3;
                     damage = 2;
+                    if (Mp > 0) { thisAnim.Play("Attack2_enhanced");damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 2)
                 {
@@ -168,9 +177,11 @@ public class PlayerController : MonoBehaviour
                     startTurns(2);
                     //waitTurns = 1;
                     attackTurns = 1;
+                    attackRange = 3;
                     damage = 3;
+                    if (/*Mp > 0*/true) { thisAnim.Play("Attack3_enhanced"); damage = 6; attackRange = 4; }
                 }
-                attackRange = 3;
+
                 attackCounter++;
                 if (attackCounter == 3) { attackCounter = 0; }
                 
@@ -191,9 +202,9 @@ public class PlayerController : MonoBehaviour
                 startTurns(2);
                 thisAnim.Play("Charge");
                 Mp++;
-                Mp = Mathf.Min(Mp, 3);
                 Instantiate(chargeEffect, transform.position, transform.rotation);
             }
+            Mp = Mathf.Min(Mp, 3);
             storedInput = KeyCode.None;
         }
 
@@ -230,8 +241,8 @@ public class PlayerController : MonoBehaviour
             if (moveTurns > 0)
             {
                 transform.Translate(speed * speedUnit * Time.deltaTime, 0, 0);
-                transform.position = new Vector3(Mathf.Max(-6, transform.position.x), transform.position.y, transform.position.z);
-                transform.position = new Vector3(Mathf.Min(6, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Max(-7.5f, transform.position.x), transform.position.y, transform.position.z);
+                transform.position = new Vector3(Mathf.Min(7.5f, transform.position.x), transform.position.y, transform.position.z);
                 if (!thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge"))
                 {
                     if (speed < 0) { thisSpriteRenderer.flipX = true; }

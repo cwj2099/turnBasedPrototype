@@ -51,6 +51,7 @@ public class Boss2_controller : BossController
                 turns = 10;
                 waitTurns = 3;
                 moveTurns = 1;
+                pushBack = 2;
                 invicibleTurns = 2;
             }
 
@@ -61,6 +62,7 @@ public class Boss2_controller : BossController
                 moveTurns = 6;
                 attackTurns = 5;
                 attackRange = -2;
+                pushBack = 1;
                 if (thisSpriteRenderer.flipX) { speed = 1; } else { speed = -1; }
             }
             else 
@@ -70,6 +72,7 @@ public class Boss2_controller : BossController
                 waitTurns = 3;
                 attackTurns = 1;
                 moveTurns = 1;
+                pushBack = 3;
                 if (thisSpriteRenderer.flipX) { speed = 1; } else { speed = -1; }
                 attackRange = 2;
             }

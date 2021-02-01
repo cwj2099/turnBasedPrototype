@@ -672,8 +672,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74769cdbbc7201b43bda5e8decfcdfbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 40
-  MaxHp: 40
+  Hp: 100
+  MaxHp: 100
   damage: 1
   player: {fileID: 693590323}
   GM: {fileID: 458392314}
@@ -698,6 +698,7 @@ MonoBehaviour:
   facing: 0
   attakcing: 0
   attackRange: 0
+  pushBack: 1
   invicible: 0
   preColor: {r: 0, g: 0, b: 0, a: 0}
   attackColor: {r: 0, g: 0, b: 0, a: 0}

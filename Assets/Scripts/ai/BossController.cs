@@ -25,12 +25,14 @@ public class BossController : MonoBehaviour
     public float speedUnit = 1;//一回合移动几个移动单位
     public float moveUnit = 2; //移动单位
     public float moveTurns = 0;//移动回合
+    public float pushedTurns = 0;//被击退回合
     public float attackTurns = 0;//攻击回合
     public float invicibleTurns = 0;//无敌回合
     public float waitTurns = 0;//等待回合
 
     public int position = 2;//当前抽象位置
     public int speed = 0;//移动速度
+    public int pushedSpeed = 0; //被移动速度
     public bool facing = true;//面朝方向
     public bool attakcing = false;//是否有攻击判定
     public int attackRange = 0;//攻击范围
@@ -179,19 +181,22 @@ public class BossController : MonoBehaviour
     public virtual void halfTurn()
     //回合过半时执行一次
     {
+
         //如果不再等待
         if (waitTurns == 0)
         {
             //根据速度更新抽象位置
             if (moveTurns > 0) { position += speed; }
             position = Mathf.Max(-3, position); position = Mathf.Min(3, position);
-            //实际位置重定位
-            transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, transform.position.z);
-            turns--; turns = Mathf.Max(0, turns);
+
+
+
             //更新攻击与无敌状态
             attakcing = (attackTurns > 0);
             invicible = (invicibleTurns > 0);
         }
+       
+        
     }
 
     public virtual void wholeTurn()
@@ -211,13 +216,27 @@ public class BossController : MonoBehaviour
             }
 
         }
+        //如果被推也改
+        if (pushedTurns > 0)
+        {
+            transform.Translate(pushedSpeed * speedUnit * Time.deltaTime, 0, 0);
+            transform.position = new Vector3(Mathf.Max(-7.5f, transform.position.x), transform.position.y, transform.position.z);
+            transform.position = new Vector3(Mathf.Min(7.5f, transform.position.x), transform.position.y, transform.position.z);
+        }
 
     }
 
     public virtual void endTurn()
     //每次回合结束执行一次
     {
-        
+        //根据被推改变位置
+        if (pushedTurns > 0) { position += pushedSpeed; }
+        position = Mathf.Max(-3, position); position = Mathf.Min(3, position);
+
+        //实际位置重定位
+        transform.position = new Vector3(moveUnit * position, transform.position.y, transform.position.z);
+
+        turns--; turns = Mathf.Max(0, turns);
         //回合数更新
         if (waitTurns > 0) { waitTurns --; }
         else
@@ -226,5 +245,6 @@ public class BossController : MonoBehaviour
             if (attackTurns > 0) { attackTurns--; }
             if (invicibleTurns > 0) { invicibleTurns--; }
         }
+        if (pushedTurns > 0) { pushedTurns--; }
     }
 }

@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public bool facing = true;//面朝方向
     public bool attakcing = false;//是否有攻击判定
     public int attackRange = 0;//攻击范围
+    public int pushBack = 0;//击退距离
     public bool invicible = false;//是否有无敌判定
 
     public Color nColor;
@@ -102,7 +103,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //零回合时，根据储存的输入执行新行动
-        if (turns==0) {
+        if (turns<=0) {
             //时间暂停
             Time.timeScale = 0;
             //各个变量复位
@@ -160,6 +161,7 @@ public class PlayerController : MonoBehaviour
                     attackTurns = 1;
                     attackRange = 3;
                     damage = 2;
+                    pushBack = 0;
                     if (Mp > 0) { thisAnim.Play("Attack1_enhanced"); damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 1)
@@ -169,6 +171,7 @@ public class PlayerController : MonoBehaviour
                     attackTurns = 1;
                     attackRange = 3;
                     damage = 2;
+                    pushBack = 0;
                     if (Mp > 0) { thisAnim.Play("Attack2_enhanced");damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 2)
@@ -179,6 +182,7 @@ public class PlayerController : MonoBehaviour
                     attackTurns = 1;
                     attackRange = 3;
                     damage = 3;
+                    pushBack = 2;
                     if (/*Mp > 0*/true) { thisAnim.Play("Attack3_enhanced"); damage = 6; attackRange = 4; }
                 }
 

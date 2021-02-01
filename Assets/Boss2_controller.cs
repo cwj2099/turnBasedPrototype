@@ -32,7 +32,7 @@ public class Boss2_controller : BossController
 
         if (thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pro"))
         {
-            if (turns == 8)
+            if (turns == 4)
             {
                 //waitTurns = 2;
                 attackTurns = 2;
@@ -48,7 +48,7 @@ public class Boss2_controller : BossController
             if (Mathf.Abs(player.position - position) >= 3)
             {
                 thisAnim.Play("Attack3Pre");
-                turns = 10;
+                turns = 8;
                 waitTurns = 3;
                 moveTurns = 1;
                 pushBack = 2;
@@ -59,7 +59,7 @@ public class Boss2_controller : BossController
                 thisAnim.Play("Attack2Pre");
                 turns = 12;
                 waitTurns = 5;
-                moveTurns = 6;
+                moveTurns = 5;
                 attackTurns = 5;
                 attackRange = -2;
                 pushBack = 1;
@@ -72,7 +72,7 @@ public class Boss2_controller : BossController
                 waitTurns = 3;
                 attackTurns = 1;
                 moveTurns = 1;
-                pushBack = 3;
+                pushBack = 2;
                 if (thisSpriteRenderer.flipX) { speed = 1; } else { speed = -1; }
                 attackRange = 2;
             }

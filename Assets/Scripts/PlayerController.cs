@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Animator thisAnim;
     public SpriteRenderer thisSpriteRenderer;
     public gameManager GM;
+    public GeneralEffect effector;
     public BossController boss;
     public ButtonInput bInput;
     public GameObject hitEffect;
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour
         //零回合时，根据储存的输入执行新行动
         if (turns<=0) {
             //时间暂停
-            Time.timeScale = 0;
+            effector.time_pause();
             //各个变量复位
             speed = 0;attakcing = false;attackRange = 0;invicible = false;
             if (storedInput==KeyCode.A)

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
+    public GeneralEffect effector;
     public PlayerController player;
     public BossController boss;
     public float betweenTurn = -1;//回合之间的计时变量
@@ -30,7 +31,7 @@ public class gameManager : MonoBehaviour
         if (player.turns > 0&&!gameOver)
         {
             //时间恢复正常
-            Time.timeScale = 1;
+            effector.time_play();
             /*if (player.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3"))
             {
                 Time.timeScale = 0.5f;
@@ -154,7 +155,7 @@ public class gameManager : MonoBehaviour
         }
         if (gameOver && counter0 > 0)
         {
-            Time.timeScale = 1;
+            effector.time_play();
             counter0 -= Time.deltaTime;
 
             Color c = black.color;

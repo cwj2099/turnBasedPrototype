@@ -166,11 +166,11 @@ public class gameManager : MonoBehaviour
         {
             if (playerWin)
             {
-                SceneManager.LoadScene("YouWin");
+                SceneManager.LoadScene("out1");
             }
             else
             {
-                SceneManager.LoadScene("YouLose");
+                SceneManager.LoadScene("out1");
             }
         }
     }

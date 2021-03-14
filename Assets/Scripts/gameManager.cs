@@ -164,6 +164,10 @@ public class gameManager : MonoBehaviour
         }
         else if (gameOver && counter0 <= 0)
         {
+            if (gameObject.GetComponent<BattleEnds>())
+            {
+                gameObject.GetComponent<BattleEnds>().Event();
+            }
             if (playerWin)
             {
                 SceneManager.LoadScene("out1");

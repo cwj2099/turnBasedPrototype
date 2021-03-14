@@ -26,15 +26,15 @@ public class Boss2_controller : BossController
         timeUnit = GM.timeUnit;
         speedUnit *= moveUnit / timeUnit;
         thisAnim.SetFloat("unit", 1 / timeUnit);
-        idle = new Boss2_state_idle();
-        attack1 = new Boss2_state_attack1();
-        attack2 = new Boss2_state_attack2();
-        attack3 = new Boss2_state_attack3();
+        idle = gameObject.GetComponent<Boss2_state_idle>();
+        attack1 = gameObject.GetComponent<Boss2_state_attack1>();
+        attack2 = gameObject.GetComponent<Boss2_state_attack2>();
+        attack3 = gameObject.GetComponent<Boss2_state_attack3>();
         currentState = idle;
     }
     public override void Update()
     {
-        currentState.Update(this);
+        currentState.Process(this);
     }
 
 }

@@ -16,7 +16,7 @@ public class Boss2_state_attack2 : Boss2_state
         if (boss.thisSpriteRenderer.flipX) { boss.speed = 1; } else { boss.speed = -1; }
     }
 
-    public override void Update(Boss2_controller boss)
+    public override void Process(Boss2_controller boss)
     {
         if (boss.turns == 0)
         {

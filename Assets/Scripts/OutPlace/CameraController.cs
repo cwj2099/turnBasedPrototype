@@ -29,21 +29,22 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //位置控制
+        //位置控制 Position Controll
         if (transform.position != locators[location].transform.position)
         {
-            //切换场景
+            //切换场景 Change Section
             if (changeCounter > 0)
             {
                 transform.position += camSpeed * Time.deltaTime;
                 changeCounter -= Time.deltaTime;
             }
-            //锁定
+            //锁定 Lock when not moving
             else
             {
                 transform.position = locators[location].transform.position;
             }
         }
+        //if not in events
         if (!inEvent)
         {
             player.transform.position = new Vector3(transform.position.x, player.transform.position.y, player.transform.position.z);
@@ -52,11 +53,16 @@ public class CameraController : MonoBehaviour
                 pAnimator.Play("idle");
             }
         }
-        //切换后的一些表现更改
+        //切换后的一些表现更改 make buttons activate when changed
         if (changeCounter <= 0.01)
         {
+            //buttons will be on if not border!
             LButton.SetActive(!locators[location].GetComponent<Locator>().noLeft);
             RButton.SetActive(!locators[location].GetComponent<Locator>().noRight);
+
+            //player can also move with keyboard 
+            if (Input.GetKeyDown(KeyCode.A)&& !locators[location].GetComponent<Locator>().noLeft) { GoLeft(); }
+            else if (Input.GetKeyDown(KeyCode.D)&& !locators[location].GetComponent<Locator>().noRight) { GoRight(); }
         }
         else
         {

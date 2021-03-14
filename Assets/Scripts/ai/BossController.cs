@@ -20,23 +20,23 @@ public class BossController : MonoBehaviour
     public SpriteRenderer pre1;
     public SpriteRenderer pre2;
 
-    public int turns = 0;//回合数
-    public float timeUnit = 0.25f; //一回合的时间单位
-    public float speedUnit = 1;//一回合移动几个移动单位
-    public float moveUnit = 2; //移动单位
-    public float moveTurns = 0;//移动回合
-    public float pushedTurns = 0;//被击退回合
-    public float attackTurns = 0;//攻击回合
-    public float invicibleTurns = 0;//无敌回合
-    public float waitTurns = 0;//等待回合
+    public int turns = 0;//回合数 Turn Counter 
+    public float timeUnit;//一回合的时间单位 how long is a turn
+    public float speedUnit = 1;//一回合移动几个移动单位 how many unit do enemy move in a turn
+    public float moveUnit = 2; //移动单位 how long in unity, is a unit
+    public float moveTurns = 0;//移动回合 the turn numbers of moving
+    public float pushedTurns = 0;//被击退回合 the turn numbers of pushed 
+    public float attackTurns = 0;//攻击回合 the turn numbers of causing attack
+    public float invicibleTurns = 0;//无敌回合 the turn numbers of invicible
+    public float waitTurns = 0;//等待回合 the turn numbers of waiting, for things listed above
 
-    public int position = 2;//当前抽象位置
-    public int speed = 0;//移动速度
-    public int pushedSpeed = 0; //被移动速度
-    public bool facing = true;//面朝方向
-    public bool attakcing = false;//是否有攻击判定
-    public int attackRange = 0;//攻击范围
-    public int pushBack = 1;
+    public int position = 2;//当前抽象位置 the current posistion, in abstract
+    public int speed = 0;//移动速度 the current abstract speed
+    public int pushedSpeed = 0; //被移动速度 the current abstract pushed speed
+    public bool facing = true;//面朝方向 the facing
+    public bool attakcing = false;//是否有攻击判定 if are causing attacks
+    public int attackRange = 0;//攻击范围 the range of attack
+    public int pushBack = 1; 
     public bool invicible = false;//是否有无敌判定
     bool lastAct=false;
 

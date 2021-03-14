@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Boss2_state
+//making them monobehaviour, thus I could switch them easily by assigning different script to different game objects
+public abstract class Boss2_state:MonoBehaviour
 {
     public abstract void EnterState(Boss2_controller boss);
-    public abstract void Update(Boss2_controller boss);
+    public abstract void Process(Boss2_controller boss);
     public abstract void LeaveState(Boss2_controller boss);
 }

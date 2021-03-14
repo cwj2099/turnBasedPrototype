@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Boss2_state_attack1 : Boss2_state
 {
     public override void EnterState(Boss2_controller boss)
@@ -16,7 +15,7 @@ public class Boss2_state_attack1 : Boss2_state
         boss.attackRange = 2;
     }
 
-    public override void Update(Boss2_controller boss)
+    public override void Process(Boss2_controller boss)
     {
         if (boss.turns == 0)
         {

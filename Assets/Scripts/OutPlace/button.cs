@@ -15,7 +15,8 @@ public class button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // print(selected);
+        // print(selected);
+        if (Input.GetKeyDown(KeyCode.J)) { GetClicked(); }
     }
 
     public virtual void GetClicked()

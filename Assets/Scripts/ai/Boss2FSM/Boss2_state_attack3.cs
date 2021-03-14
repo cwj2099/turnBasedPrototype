@@ -14,7 +14,7 @@ public class Boss2_state_attack3 : Boss2_state
         boss.invicibleTurns = 2;
     }
 
-    public override void Update(Boss2_controller boss)
+    public override void Process(Boss2_controller boss)
     {
         if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pre"))
         {

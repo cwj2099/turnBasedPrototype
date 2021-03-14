@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss2_state_idle : Boss2_state
+public class Boss_state_idle_minion : Boss2_state_idle
 {
+    public int type;
     public override void EnterState(Boss2_controller boss)
     {
-        
+
     }
 
     public override void Process(Boss2_controller boss)
@@ -14,12 +15,12 @@ public class Boss2_state_idle : Boss2_state
         boss.thisSpriteRenderer.flipX = boss.player.thisSpriteRenderer.flipX;
         boss.facing = boss.thisSpriteRenderer.flipX;
 
-        if (Mathf.Abs(boss.player.position - boss.position) >= 3)
+        if (type==3)
         {
             boss.ChangeState(boss.attack3);
         }
 
-        else if (boss.position % 2 == 0)
+        else if (type==2)
         {
             boss.ChangeState(boss.attack2);
         }
@@ -31,8 +32,6 @@ public class Boss2_state_idle : Boss2_state
 
     public override void LeaveState(Boss2_controller boss)
     {
-        
+
     }
-
-
 }

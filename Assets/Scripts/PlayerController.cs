@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public GameObject chargeEffect;
     public Text turnText;
     public Image healthBar;
+    public Image MpBar;
     public int attackCounter = 0;
 
     public int turns = 0;//回合数
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = Mp / 3;
+        MpBar.fillAmount = Mp / 3;
       //  if (GM.gameOver) { thisAnim.Play("idle"); }
         if (invicible) { thisSpriteRenderer.color = iColor; }
         else { thisSpriteRenderer.color = nColor; }

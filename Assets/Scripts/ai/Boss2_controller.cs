@@ -31,6 +31,8 @@ public class Boss2_controller : BossController
         attack2 = gameObject.GetComponent<Boss2_state_attack2>();
         attack3 = gameObject.GetComponent<Boss2_state_attack3>();
         currentState = idle;
+
+        Hp = MaxHp;
     }
     public override void Update()
     {

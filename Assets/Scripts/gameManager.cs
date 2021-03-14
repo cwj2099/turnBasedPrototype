@@ -77,6 +77,8 @@ public class gameManager : MonoBehaviour
                         {
                             player.thisAnim.Play("Hurt");
                             player.turns = 3;
+                            player.hurtTurns = 3;
+                            player.Hp -= boss.damage;
                         }
                     }
                     //挨打，其实现在是直接死了
@@ -84,19 +86,16 @@ public class gameManager : MonoBehaviour
                     {
                         player.attackTurns = 0; player.waitTurns = 0; player.moveTurns = 0; player.attackCounter = 0;
                         player.transform.position = new Vector3(player.position * player.moveUnit, player.transform.position.y, player.transform.position.z);
-                        player.turns = 2;
-                        player.hurtTurns = 2;
+                        player.moveTurns = 1;
+                        if (!boss.facing) { player.speed = -1 * boss.pushBack; }
+                        else { player.speed = boss.pushBack; }
+                        player.turns = 3;
+                        player.hurtTurns = 3;
                         player.thisAnim.Play("Hurt");
-                        player.Hp = 0;
+                        player.Hp -= boss.damage;
                     }
-                    //player.healthBar.fillAmount = player.Hp / 3;
-                    if (!gameOver && player.Hp <= 0)
-                    {
-                        gameOver = true;
-                        Destroy(player.gameObject);
-                        playerWin = false;
-                        counter0 = 2;
-                    }
+                    player.healthBar.fillAmount = player.Hp / 3;
+
                 }
 
                 betweenTurn = timeUnit;
@@ -110,6 +109,7 @@ public class gameManager : MonoBehaviour
             //半回合结束
             else
             {
+
                 //时间重置
                 halfTurn = timeUnit;
                 //print("half");
@@ -153,6 +153,13 @@ public class gameManager : MonoBehaviour
                 
             }
         }
+        if (!gameOver && player.Hp <= 0 && player.hurtTurns == 0)
+        {
+            gameOver = true;
+            Destroy(player.gameObject);
+            playerWin = false;
+            counter0 = 2;
+        }
         if (gameOver && counter0 > 0)
         {
             effector.time_play();
@@ -164,12 +171,13 @@ public class gameManager : MonoBehaviour
         }
         else if (gameOver && counter0 <= 0)
         {
-            if (gameObject.GetComponent<BattleEnds>())
-            {
-                gameObject.GetComponent<BattleEnds>().Event();
-            }
+
             if (playerWin)
             {
+                if (gameObject.GetComponent<BattleEnds>())
+                {
+                    gameObject.GetComponent<BattleEnds>().Event();
+                }
                 SceneManager.LoadScene("out1");
             }
             else

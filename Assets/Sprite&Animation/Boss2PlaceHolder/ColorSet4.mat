@@ -100,6 +100,10 @@ Material:
     - Color_6bf467db75ed44e089a9596544249a51: {r: 0.9684552, g: 1, b: 0.495283, a: 0}
     - Color_de277c2206ca4748b05ffe32711df4fa: {r: 1, g: 0.25, b: 0.25, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.6792453, g: 0.6162114, b: 0.3812745, a: 0}
+    - _Color2: {r: 0, g: 0.252903, b: 1, a: 0}
+    - _Color3: {r: 0.9789863, g: 1, b: 0.6650944, a: 0}
+    - _Color4: {r: 1, g: 0.1537725, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

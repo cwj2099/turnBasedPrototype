@@ -49,6 +49,7 @@ public class BossController : MonoBehaviour
         timeUnit = GM.timeUnit;
         speedUnit *= moveUnit / timeUnit;
         thisAnim.SetFloat("unit", 1 / timeUnit);
+        Hp = MaxHp;
     }
 
     // Update is called once per frame

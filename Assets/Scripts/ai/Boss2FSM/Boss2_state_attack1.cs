@@ -17,6 +17,7 @@ public class Boss2_state_attack1 : Boss2_state
 
     public override void Process(Boss2_controller boss)
     {
+
         if (boss.turns == 0)
         {
             boss.ChangeState(boss.idle);

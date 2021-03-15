@@ -38,7 +38,6 @@ public class BossController : MonoBehaviour
     public int attackRange = 0;//攻击范围 the range of attack
     public int pushBack = 1; 
     public bool invicible = false;//是否有无敌判定
-    public float priority = 0;
     bool lastAct=false;
 
     public Color preColor;

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GeneralEffect : MonoBehaviour
 {
-    public float camMax = 5f;
-    public float camMin = 4.5f;
-    public float zoonTime = 0.5f;
-    public float recoverTime = 0.5f;
+    private float camMax = 5f;
+    private float camMin = 4.9f;
 
-    [SerializeField]
+    private float zoonCounter = 0.6f;
+
+    private float stunScale = 0.01f;
     private float stunCounter;
     private float curv1 = 0f;
     private float curv2 = 0f;
@@ -20,14 +20,20 @@ public class GeneralEffect : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        Time.timeScale = 1;
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale >0)
+        if (Time.timeScale >0&&Time.timeScale!=1)
         {
-            if (stunCounter > 0)
+            
+            if (curv1 > 0)
             {
-                stunCounter -= Time.unscaledDeltaTime;
+                Time.timeScale = EasingFunction.EaseInQuart(stunScale, 1, 1 - curv1 / stunCounter);
+                curv1 -= Time.unscaledDeltaTime;
             }
             else
             {
@@ -35,24 +41,19 @@ public class GeneralEffect : MonoBehaviour
             }
         }
 
-        //old camera script
-        /*
         if (zooning)
         {
-            curv2 -= Time.unscaledDeltaTime* (recoverTime / zoonTime);
-            curv1 += Time.unscaledDeltaTime;
-            curv1 = Mathf.Min(curv1, zoonTime);
-            curv2 = Mathf.Max(curv2, 0);
-            Camera.main.orthographicSize = EasingFunction.EaseInQuint(camMax, camMin, curv1 / zoonTime);
+            Camera.main.orthographicSize = EasingFunction.EaseInBack(camMin, camMax, 1 - curv2 / zoonCounter);
+            if (curv2 > 0)
+            {
+                curv2 -= Time.unscaledDeltaTime;
+            }
+            else
+            {
+                Camera.main.orthographicSize = camMax;
+                zooning = false;
+            }
         }
-        else
-        {
-            curv2 += Time.unscaledDeltaTime;
-            curv1 -= Time.unscaledDeltaTime*(zoonTime/recoverTime);
-            curv2 = Mathf.Min(curv2, recoverTime);
-            curv1 = Mathf.Max(curv1, 0);
-            Camera.main.orthographicSize = EasingFunction.EaseOutQuint(camMin, camMax, curv2 / recoverTime);
-        }*/
     }
 
     public void time_play()
@@ -69,9 +70,25 @@ public class GeneralEffect : MonoBehaviour
         
     }
 
+    public void end()
+    {
+        Camera.main.orthographicSize = camMax;
+        Time.timeScale = 1;
+        curv1 = 0;
+        curv2 = 0;
+        zooning = false;
+    }
+
     public void hitStun(float time)
     {
         stunCounter = time;
-        Time.timeScale = 0.1f;
+        curv1 = time;
+        Time.timeScale = stunScale;
+    }
+
+    public void camZoon()
+    {
+        zooning = true;
+        curv2 = zoonCounter;
     }
 }

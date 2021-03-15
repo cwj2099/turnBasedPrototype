@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour
                     attackRange = 3;
                     damage = 2;
                     pushBack = 0;
+                    priority = 0.1f;
                     if (Mp > 0) { thisAnim.Play("Attack1_enhanced"); damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 1)
@@ -175,6 +176,7 @@ public class PlayerController : MonoBehaviour
                     attackRange = 3;
                     damage = 2;
                     pushBack = 0;
+                    priority = 0.1f;
                     if (Mp > 0) { thisAnim.Play("Attack2_enhanced");damage = 3; attackRange = 4; }
                 }
                 if (attackCounter == 2)
@@ -186,6 +188,7 @@ public class PlayerController : MonoBehaviour
                     attackRange = 3;
                     damage = 3;
                     pushBack = 2;
+                    priority = 0.01f;
                     if (/*Mp > 0*/true) { thisAnim.Play("Attack3_enhanced"); damage = 6; attackRange = 4; }
                 }
 
@@ -231,7 +234,8 @@ public class PlayerController : MonoBehaviour
         //如果不再等待
         if (waitTurns ==0) {
             //根据速度更新抽象位置
-            if (moveTurns > 0) { position += speed; position = Mathf.Max(-3, position);position = Mathf.Min(3, position); }
+            if (moveTurns > 0) { position += speed; }
+            position = Mathf.Max(-3, position); position = Mathf.Min(3, position);
             //更新攻击与无敌状态
             attakcing = (attackTurns > 0);
             invicible = (invicibleTurns > 0);

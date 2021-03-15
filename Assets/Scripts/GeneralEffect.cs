@@ -9,6 +9,8 @@ public class GeneralEffect : MonoBehaviour
     public float zoonTime = 0.5f;
     public float recoverTime = 0.5f;
 
+    [SerializeField]
+    private float stunCounter;
     private float curv1 = 0f;
     private float curv2 = 0f;
     private bool zooning = false;
@@ -21,7 +23,20 @@ public class GeneralEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale >0)
+        {
+            if (stunCounter > 0)
+            {
+                stunCounter -= Time.unscaledDeltaTime;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
 
+        //old camera script
+        /*
         if (zooning)
         {
             curv2 -= Time.unscaledDeltaTime* (recoverTime / zoonTime);
@@ -37,20 +52,26 @@ public class GeneralEffect : MonoBehaviour
             curv2 = Mathf.Min(curv2, recoverTime);
             curv1 = Mathf.Max(curv1, 0);
             Camera.main.orthographicSize = EasingFunction.EaseOutQuint(camMin, camMax, curv2 / recoverTime);
-        }
+        }*/
     }
 
     public void time_play()
     {
-        Time.timeScale = 1;
-        zooning = false;
+        if (Time.timeScale == 0) { Time.timeScale = 1; }
+        //zooning = false;
         
     }
 
     public void time_pause()
     {
         Time.timeScale = 0;
-        zooning = true;
+        //zooning = true;
         
+    }
+
+    public void hitStun(float time)
+    {
+        stunCounter = time;
+        Time.timeScale = 0.1f;
     }
 }

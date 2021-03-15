@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public int attackRange = 0;//攻击范围
     public int pushBack = 0;//击退距离
     public bool invicible = false;//是否有无敌判定
+    public float priority = 0.5f;//确认是么时候发生
 
     public Color nColor;
     public Color iColor;

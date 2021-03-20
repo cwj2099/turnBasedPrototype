@@ -5,6 +5,7 @@ using UnityEngine;
 public class hitEffect : MonoBehaviour
 {
     public Animator thisAnimator;
+    public List<ParticleSystem> toFlip;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,15 @@ public class hitEffect : MonoBehaviour
         if (thisAnimator.GetCurrentAnimatorStateInfo(0).IsName("End"))
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void flipX()
+    {
+        foreach(ParticleSystem pt in toFlip)
+        {
+            var temp = pt.main;
+            temp.flipRotation = 1;
         }
     }
 }

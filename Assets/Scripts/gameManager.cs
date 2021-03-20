@@ -124,15 +124,26 @@ public class gameManager : MonoBehaviour
             || player.position == boss.position) && (!boss.invicible))
         {
             //print("hitted");
-            Instantiate(player.hitEffect, boss.transform.position, transform.rotation);
-            if (player.Mp > 0) { player.Mp--; /*player.damage *= 2;*/ Instantiate(player.hitEffect2, boss.transform.position, transform.rotation); }
+            
+            
+            if (player.damage > 4)
+            {
+                Instantiate(player.hitEffect2, boss.transform.position, transform.rotation);
+            }
+            else
+            {
+                GameObject ef = Instantiate(player.hitEffect, boss.transform.position, transform.rotation);
+                ef.transform.localScale = new Vector3(ef.transform.localScale.x * dir, ef.transform.localScale.y, ef.transform.localScale.z);
+                if (player.facing) { ef.GetComponent<hitEffect>().flipX(); }
+            }
+            if (player.Mp > 0) { player.Mp--; /*player.damage *= 2;*/ }
             boss.hitted = true;
             boss.Hp -= player.damage;
             boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
             //effector.hitStun(player.damage/30+0.05f/(player.damage*player.damage));
             if (player.damage <= 2) { effector.hitStun(0.05f); }
             else if (player.damage <= 4) { effector.hitStun(0.15f); }
-            else { effector.hitStun(0.3f); }
+            else { effector.hitStun(0.2f); }
             //击退boss
             /*if (player.facing) { boss.position+= -1 * player.pushBack;boss.transform.Translate(-boss.moveUnit * player.pushBack, 0, 0); }
             else { boss.position+= player.pushBack; boss.transform.Translate(boss.moveUnit * player.pushBack, 0, 0); }*/

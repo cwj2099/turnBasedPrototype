@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Boss2_state_attack3 : Boss2_state
 {
+    public GameObject effect;
+    private GameObject ef;
     public override void EnterState(Boss2_controller boss)
     {
         boss.thisAnim.Play("Attack3Pre");
@@ -28,9 +30,19 @@ public class Boss2_state_attack3 : Boss2_state
                 if (boss.transform.position.y < 5) { boss.transform.Translate(0, 50 * Time.deltaTime, 0); }
             }
         }
+        if ( boss.turns == 4&&ef == null )
+        {
+            ef = Instantiate(effect);
+            ef.gameObject.GetComponent<SpriteRenderer>().flipX = boss.thisSpriteRenderer.flipX;
+        }
+        if(ef != null)
+        {
+            ef.transform.position = boss.gameObject.transform.position;
+        }
 
         if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pro"))
         {
+
             if (boss.turns == 4)
             {
                 //waitTurns = 2;

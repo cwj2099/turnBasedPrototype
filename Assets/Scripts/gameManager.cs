@@ -141,15 +141,15 @@ public class gameManager : MonoBehaviour
             boss.Hp -= player.damage;
             boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
             //effector.hitStun(player.damage/30+0.05f/(player.damage*player.damage));
-            if (player.damage <= 2) { effector.hitStun(0.05f); }
+            /*if (player.damage <= 2) { effector.hitStun(0.05f); }
             else if (player.damage <= 4) { effector.hitStun(0.15f); }
-            else { effector.hitStun(0.2f); }
+            else { effector.hitStun(0.3f); }*/
             //击退boss
             /*if (player.facing) { boss.position+= -1 * player.pushBack;boss.transform.Translate(-boss.moveUnit * player.pushBack, 0, 0); }
             else { boss.position+= player.pushBack; boss.transform.Translate(boss.moveUnit * player.pushBack, 0, 0); }*/
             if (player.pushBack > 0)
             {
-                effector.camZoon();
+                //effector.camZoon();
                 boss.pushedTurns = 1;
                 //boss.turns+=2;
                 if (player.facing) { boss.pushedSpeed = -1 * player.pushBack; }
@@ -178,13 +178,14 @@ public class gameManager : MonoBehaviour
             || player.position == boss.position))
         {
             //print("hitted");
-            Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
+            
             //玩家处于防御状态
             if (player.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Charge"))
             {
                 //正常成功防御
                 if (!(player.position == 3 || player.position == -3))
                 {
+                    Instantiate(boss.hitEffect2, player.transform.position, transform.rotation);
                     player.turns = 1;
                     player.thisAnim.Play("Charge");
                     player.moveTurns = 1;
@@ -195,15 +196,21 @@ public class gameManager : MonoBehaviour
                 //惨遭崩防
                 else
                 {
+                    Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
                     player.thisAnim.Play("Hurt");
                     player.turns = 3;
                     player.hurtTurns = 3;
                     player.Hp -= boss.damage;
+                    effector.hitStun(0.3f);
+                    effector.camZoon();
                 }
             }
 
             else
             {
+                Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
+                effector.hitStun(0.3f);
+                effector.camZoon();
                 player.attackTurns = 0; player.waitTurns = 0; player.moveTurns = 0; player.attackCounter = 0;
                 player.transform.position = new Vector3(player.position * player.moveUnit, player.transform.position.y, player.transform.position.z);
                 player.moveTurns = 1;

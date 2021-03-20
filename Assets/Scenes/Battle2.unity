@@ -482,6 +482,7 @@ MonoBehaviour:
   thisSpriteRenderer: {fileID: 405871515}
   hitted: 0
   hitEffect: {fileID: 4856430269409844847, guid: 386a81f14d1f63f4abd422682613aea6, type: 3}
+  hitEffect2: {fileID: 4856430269409844847, guid: 2c809660759a868479e43afd07fb16c4, type: 3}
   pre1: {fileID: 0}
   pre2: {fileID: 0}
   turns: 0
@@ -501,7 +502,6 @@ MonoBehaviour:
   attackRange: 0
   pushBack: 1
   invicible: 0
-  priority: 0.1
   preColor: {r: 0, g: 0, b: 0, a: 0}
   attackColor: {r: 0, g: 0, b: 0, a: 0}
   afterColor: {r: 0, g: 0, b: 0, a: 0}
@@ -583,6 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ca027e82047c54d9d477b9b8b7fdc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 1596683859202359126, guid: 30a4a4ba9d5451f44ac37bb5450e3ebb, type: 3}
 --- !u!114 &405871523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,11 +724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf61e45610948c41a873ebf41f0c964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camMax: 5
-  camMin: 4.8
-  zoonTime: 1.5
-  recoverTime: 1
-  stunScale: 0.01
 --- !u!114 &458392317
 MonoBehaviour:
   m_ObjectHideFlags: 0

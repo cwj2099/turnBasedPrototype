@@ -17,6 +17,7 @@ public class BossController : MonoBehaviour
     public SpriteRenderer thisSpriteRenderer;
     public bool hitted = false;
     public GameObject hitEffect;
+    public GameObject hitEffect2;
     public SpriteRenderer pre1;
     public SpriteRenderer pre2;
 

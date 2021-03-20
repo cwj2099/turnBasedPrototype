@@ -7,12 +7,14 @@ public class GeneralEffect : MonoBehaviour
     private float camMax = 5f;
     private float camMin = 4.9f;
 
-    private float zoonCounter = 0.6f;
+    private float zoonIn = 0.2f;
+    private float zoonOut = 0.5f;
 
     private float stunScale = 0.01f;
     private float stunCounter;
     private float curv1 = 0f;
     private float curv2 = 0f;
+    private float curv3 = 0f;
     private bool zooning = false;
     // Start is called before the first frame update
     void Start()
@@ -43,7 +45,20 @@ public class GeneralEffect : MonoBehaviour
 
         if (zooning)
         {
-            Camera.main.orthographicSize = EasingFunction.EaseInBack(camMin, camMax, 1 - curv2 / zoonCounter);
+            Camera.main.orthographicSize = EasingFunction.EaseOutQuad(camMin, camMax, curv3/ zoonIn);
+            if (curv3 > 0)
+            {
+                curv3 -= Time.unscaledDeltaTime;
+            }
+            else
+            {
+                curv2 = zoonOut;
+                zooning = false;
+            }
+        }
+        else
+        {
+            Camera.main.orthographicSize = EasingFunction.EaseInQuad(camMin, camMax, 1 - curv2 / zoonOut);
             if (curv2 > 0)
             {
                 curv2 -= Time.unscaledDeltaTime;
@@ -51,7 +66,6 @@ public class GeneralEffect : MonoBehaviour
             else
             {
                 Camera.main.orthographicSize = camMax;
-                zooning = false;
             }
         }
     }
@@ -76,6 +90,7 @@ public class GeneralEffect : MonoBehaviour
         Time.timeScale = 1;
         curv1 = 0;
         curv2 = 0;
+        curv3 = 0;
         zooning = false;
     }
 
@@ -89,6 +104,6 @@ public class GeneralEffect : MonoBehaviour
     public void camZoon()
     {
         zooning = true;
-        curv2 = zoonCounter;
+        curv3 = zoonIn;
     }
 }

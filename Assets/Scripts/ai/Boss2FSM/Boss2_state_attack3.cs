@@ -33,7 +33,6 @@ public class Boss2_state_attack3 : Boss2_state
         if ( boss.turns == 4&&ef == null )
         {
             ef = Instantiate(effect);
-            ef.gameObject.GetComponent<SpriteRenderer>().flipX = boss.thisSpriteRenderer.flipX;
         }
         if(ef != null)
         {

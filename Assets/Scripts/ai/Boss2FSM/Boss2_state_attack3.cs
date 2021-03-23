@@ -20,13 +20,17 @@ public class Boss2_state_attack3 : Boss2_state
     {
         if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pre"))
         {
+            
+            //boss.transform.rotation = new Quaternion(0, boss.transform.rotation.y + 180 * Time.deltaTime, 0,0);
             if (boss.waitTurns == 1)
             {
+                boss.invicible = true;
                 if (boss.thisSpriteRenderer.flipX) { boss.speed = boss.player.position - boss.position; }
                 else { boss.speed = boss.player.position - boss.position; }
             }
             if (boss.waitTurns == 0)
             {
+                
                 if (boss.transform.position.y < 5) { boss.transform.Translate(0, 50 * Time.deltaTime, 0); }
             }
         }
@@ -41,7 +45,7 @@ public class Boss2_state_attack3 : Boss2_state
 
         if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pro"))
         {
-
+            boss.transform.rotation = new Quaternion(0, 0, 0, 0);
             if (boss.turns == 4)
             {
                 //waitTurns = 2;

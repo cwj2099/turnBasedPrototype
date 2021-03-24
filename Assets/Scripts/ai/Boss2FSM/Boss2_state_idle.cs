@@ -6,7 +6,7 @@ public class Boss2_state_idle : Boss2_state
 {
     public override void EnterState(Boss2_controller boss)
     {
-        boss.turns = 2;
+        boss.turns = 4;
     }
 
     public override void Process(Boss2_controller boss)

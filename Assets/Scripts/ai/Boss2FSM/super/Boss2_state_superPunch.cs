@@ -20,9 +20,26 @@ public class Boss2_state_superPunch : Boss2_state
 
     public override void Process(Boss2_controller boss)
     {
+        if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("SuperPunchPre"))
+        {
+            if (boss.facing)
+            {
+                boss.transform.rotation = Quaternion.Euler(0, 0, 20);
+            }
+
+            else
+            {
+                boss.transform.rotation = Quaternion.Euler(0, 0, -20);
+            }
+        }
+        else
+        {
+            boss.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
         if (boss.waitTurns > 1)
         {
-            boss.thisSpriteRenderer.flipX = boss.player.thisSpriteRenderer.flipX;
+            boss.thisSpriteRenderer.flipX = (boss.position < boss.player.position);
             boss.facing = boss.thisSpriteRenderer.flipX;
             if (boss.thisSpriteRenderer.flipX) { boss.speed = 1; } else { boss.speed = -1; }
         }

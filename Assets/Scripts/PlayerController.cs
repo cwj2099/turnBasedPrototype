@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         //更新回合数
         turnText.text = turns.ToString();
         //不是正在进行移动或者攻击的时候，自动转向
-        if (moveTurns <= 0&&attackTurns<=0&&!GM.gameOver)
+        if (turns<=0&&!GM.gameOver)
         {
             if (boss.position<position) { facing = true; }
             else if (boss.position>position) { facing = false; }
@@ -113,18 +113,52 @@ public class PlayerController : MonoBehaviour
             speed = 0;attakcing = false;attackRange = 0;invicible = false;
             if (storedInput==KeyCode.A)
             {
-                thisAnim.Play("Move");
-                startTurns(2);
-                speed = -2;
-                moveTurns = 1;
+                if(Mathf.Abs(position - boss.position) <= 2&&position>=boss.position&&!boss.invicible)
+                {
+                    startTurns(2);
+                    //waitTurns = 1;
+                    moveTurns = 1;
+                    attackTurns = 1;
+                    thisAnim.Play("Special");
+                    speed = -2;
+                    attackRange = -3;
+                    damage = 1;
+                    pushBack = 0;
+                    if (Mp > 0) { thisAnim.Play("Speical_enhanced"); damage = 3; }
+                }
+                else
+                {
+                    thisAnim.Play("Move");
+                    startTurns(2);
+                    speed = -2;
+                    moveTurns = 1;
+                }
+
             }
 
             if (storedInput == KeyCode.D)
             {
-                thisAnim.Play("Move");
-                startTurns(2);
-                speed = 2;
-                moveTurns = 1;
+                if (Mathf.Abs(position - boss.position) <= 2 && position <= boss.position && !boss.invicible)
+                {
+                    startTurns(2);
+                    //waitTurns = 1;
+                    moveTurns = 1;
+                    attackTurns = 1;
+                    thisAnim.Play("Special");
+                    speed = 2;
+                    attackRange = -3;
+                    damage = 1;
+                    pushBack = 0;
+                    if (Mp > 0) { thisAnim.Play("Speical_enhanced"); damage = 3; }
+                }
+                else {
+                    thisAnim.Play("Move");
+                    startTurns(2);
+                    speed = 2;
+                    moveTurns = 1;
+                }
+
+
             }
 
             /*if (storedInput == KeyCode.LeftShift)
@@ -187,7 +221,7 @@ public class PlayerController : MonoBehaviour
                     attackTurns = 1;
                     attackRange = 3;
                     damage = 3;
-                    pushBack = 2;
+                    pushBack = 1;
                     priority = 0.01f;
                     if (/*Mp > 0*/true) { thisAnim.Play("Attack3_enhanced"); damage = 6; attackRange = 4; }
                 }

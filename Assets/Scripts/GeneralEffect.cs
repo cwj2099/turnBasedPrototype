@@ -5,7 +5,7 @@ using UnityEngine;
 public class GeneralEffect : MonoBehaviour
 {
     private float camMax = 5f;
-    private float camMin = 4.9f;
+    private float camMin = 4.3f;
 
     private float zoonIn = 0.2f;
     private float zoonOut = 0.5f;

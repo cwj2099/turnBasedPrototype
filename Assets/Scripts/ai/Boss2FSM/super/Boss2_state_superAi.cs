@@ -17,9 +17,13 @@ public class Boss2_state_superAi : Boss2_state_idle
             boss.thisSpriteRenderer.flipX = boss.player.thisSpriteRenderer.flipX;
             boss.facing = boss.thisSpriteRenderer.flipX;
 
-            if (Mathf.Abs(boss.player.position - boss.position) <=2)
+            if (Mathf.Abs(boss.player.position - boss.position) <=1)
             {
-                boss.ChangeState(boss.gameObject.GetComponent<Boss2_state_lightPunch>());
+                boss.ChangeState(boss.attack1);
+            }
+            else if (Mathf.Abs(boss.player.position - boss.position) <= 3)
+            {
+                boss.ChangeState(boss.attack2);
             }
 
             else if (boss.position % 2 == 0)

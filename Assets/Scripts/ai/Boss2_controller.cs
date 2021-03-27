@@ -57,6 +57,7 @@ public class Boss2_controller : BossController
             {
                 //Debug.Log("Break!");
                 ChangeState(crush);
+                player.BreakSound.Play();
             }
         }
         position = Mathf.Max(-3, position); position = Mathf.Min(3, position);

@@ -124,6 +124,9 @@ public class gameManager : MonoBehaviour
             || player.position == boss.position) && (!boss.invicible))
         {
             //print("hitted");
+            player.HitSound1.pitch = Random.Range(0.5f, 0.75f);
+            player.HitSound1.Play();
+            player.HitSound2.Play();
             
             
             if (player.damage > 4)
@@ -186,6 +189,7 @@ public class gameManager : MonoBehaviour
                 //正常成功防御
                 if (!(player.position == 3 || player.position == -3))
                 {
+                    player.BlockSound.Play();
                     Instantiate(boss.hitEffect2, player.transform.position, transform.rotation);
                     player.turns = 1;
                     player.thisAnim.Play("Charge");
@@ -197,6 +201,7 @@ public class gameManager : MonoBehaviour
                 //惨遭崩防
                 else
                 {
+                    player.HurtSound.Play();
                     Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
                     player.thisAnim.Play("Hurt");
                     player.turns = 3;
@@ -209,6 +214,8 @@ public class gameManager : MonoBehaviour
 
             else
             {
+
+                player.HurtSound.Play();
                 Instantiate(boss.hitEffect, player.transform.position, transform.rotation);
                 effector.hitStun(0.3f);
                 effector.camZoon();

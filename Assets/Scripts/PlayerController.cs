@@ -50,12 +50,22 @@ public class PlayerController : MonoBehaviour
     public Sprite a2;
     public Sprite a3;
 
+    public AudioSource BreakSound;
+    public AudioSource BlockSound;
+    public AudioSource SlashSound;
+    public AudioSource HitSound1;
+    public AudioSource HitSound2;
+    public AudioSource HitSound3;
+    public AudioSource HurtSound;
     // Start is called before the first frame update
     void Start()
     {
         timeUnit = GM.timeUnit;
         speedUnit *= moveUnit / timeUnit;
         thisAnim.SetFloat("unit", 1 / timeUnit);
+
+        HurtSound.timeSamples = 20000;
+        HitSound3.timeSamples = 10000;
     }
 
     // Update is called once per frame
@@ -115,6 +125,7 @@ public class PlayerController : MonoBehaviour
             {
                 if(Mathf.Abs(position - boss.position) <= 2&&position>=boss.position&&!boss.invicible)
                 {
+                    SlashSound.Play();
                     startTurns(2);
                     //waitTurns = 1;
                     moveTurns = 1;
@@ -140,6 +151,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Mathf.Abs(position - boss.position) <= 2 && position <= boss.position && !boss.invicible)
                 {
+                    SlashSound.Play();
                     startTurns(2);
                     //waitTurns = 1;
                     moveTurns = 1;
@@ -186,6 +198,7 @@ public class PlayerController : MonoBehaviour
 
                 if (attackCounter == 0)
                 {
+                    SlashSound.Play();
                     thisAnim.Play("Attack1");
                     startTurns(2);
                     /*if (Mathf.Abs(boss.position - position) > 1)
@@ -204,6 +217,7 @@ public class PlayerController : MonoBehaviour
                 }
                 if (attackCounter == 1)
                 {
+                    SlashSound.Play();
                     thisAnim.Play("Attack2");
                     startTurns(2);
                     attackTurns = 1;
@@ -215,6 +229,7 @@ public class PlayerController : MonoBehaviour
                 }
                 if (attackCounter == 2)
                 {
+                    SlashSound.Play();
                     thisAnim.Play("Attack3");
                     startTurns(2);
                     //waitTurns = 1;

@@ -313,7 +313,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1078897408}
         m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
-        m_MethodName: health_update_100
+        m_MethodName: healthBar_Update
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

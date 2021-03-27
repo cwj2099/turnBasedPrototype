@@ -7,7 +7,7 @@ public class Boss2_state_crush : Boss2_state
     public override void EnterState(Boss2_controller boss)
     {
         boss.Hp -= 5;
-        boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
+        boss.health.healthBar_Update(boss.Hp / boss.MaxHp);
         boss.GM.effector.hitStun(1f);
         boss.GM.effector.camZoon();
         Instantiate(boss.breakEffect, boss.transform.position, boss.transform.rotation);

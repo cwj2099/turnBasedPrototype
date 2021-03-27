@@ -26,7 +26,7 @@ public class HealthBar : MonoBehaviour
         HealthBar_HP.fillAmount = fillAmount;
         if (HealthBar_Effect.fillAmount > HealthBar_HP.fillAmount)
         {
-            HealthBar_Effect.fillAmount -= 0.003f;
+            HealthBar_Effect.fillAmount -= 0.0003f;
         }
         else
         {

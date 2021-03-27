@@ -139,7 +139,7 @@ public class gameManager : MonoBehaviour
             if (player.Mp > 0) { player.Mp--; /*player.damage *= 2;*/ }
             boss.hitted = true;
             boss.Hp -= player.damage;
-            boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
+            boss.health.healthBar_Update(boss.Hp / boss.MaxHp);
 
             //effector.hitStun(player.damage/30+0.05f/(player.damage*player.damage));
             if (player.damage <= 2) { effector.hitStun(0.02f); }

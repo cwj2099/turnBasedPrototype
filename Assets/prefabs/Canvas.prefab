@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2363921706179531679}
   - component: {fileID: 434409645339057078}
   - component: {fileID: 530891674190693941}
+  - component: {fileID: 1889631843990421437}
   m_Layer: 5
   m_Name: HealthBar_HP
   m_TagString: Untagged
@@ -75,6 +76,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1889631843990421437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661286338786927193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e1977d3c0d79b4cbb7d759b969e65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthBar_HP: {fileID: 530891674190693941}
+  HealthBar_Effect: {fileID: 4583752065414279929}
 --- !u!1 &1106038594767920700
 GameObject:
   m_ObjectHideFlags: 0

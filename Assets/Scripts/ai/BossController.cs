@@ -13,7 +13,7 @@ public class BossController : MonoBehaviour
     public gameManager GM;
     public Animator thisAnim;
     public Text turnText;
-    public Image healthBar;
+    public HealthBar health;
     public SpriteRenderer thisSpriteRenderer;
     public bool hitted = false;
     public GameObject hitEffect;

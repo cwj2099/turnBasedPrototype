@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &12144964 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 530891674190693941, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
-  m_PrefabInstance: {fileID: 24941421}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &24941421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,6 +244,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &24941424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1889631843990421437, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
+  m_PrefabInstance: {fileID: 24941421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e1977d3c0d79b4cbb7d759b969e65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &24941425 stripped
@@ -616,7 +616,7 @@ MonoBehaviour:
   GM: {fileID: 0}
   thisAnim: {fileID: 0}
   turnText: {fileID: 0}
-  healthBar: {fileID: 12144964}
+  health: {fileID: 24941424}
   thisSpriteRenderer: {fileID: 405871515}
   hitted: 0
   hitEffect: {fileID: 0}

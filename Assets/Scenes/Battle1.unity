@@ -480,7 +480,7 @@ MonoBehaviour:
   GM: {fileID: 458392314}
   thisAnim: {fileID: 405871519}
   turnText: {fileID: 0}
-  healthBar: {fileID: 1684272763}
+  health: {fileID: 5067915434829671646}
   thisSpriteRenderer: {fileID: 405871515}
   hitted: 0
   hitEffect: {fileID: 4856430269409844847, guid: 386a81f14d1f63f4abd422682613aea6, type: 3}
@@ -1522,17 +1522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1684272763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5067915435301542566, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
-  m_PrefabInstance: {fileID: 5067915434829671645}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1796121518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1859,17 @@ PrefabInstance:
       objectReference: {fileID: 693590324}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
+--- !u!114 &5067915434829671646 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1889631843990421437, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
+  m_PrefabInstance: {fileID: 5067915434829671645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e1977d3c0d79b4cbb7d759b969e65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6456336195083031708
 PrefabInstance:
   m_ObjectHideFlags: 0

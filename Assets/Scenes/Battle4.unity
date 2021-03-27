@@ -385,6 +385,8 @@ GameObject:
   - component: {fileID: 405871521}
   - component: {fileID: 405871520}
   - component: {fileID: 405871524}
+  - component: {fileID: 405871526}
+  - component: {fileID: 405871525}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -503,6 +505,7 @@ MonoBehaviour:
   attackRange: 0
   pushBack: 1
   invicible: 0
+  chain: 0
   preColor: {r: 0, g: 0, b: 0, a: 0}
   attackColor: {r: 0, g: 0, b: 0, a: 0}
   afterColor: {r: 0, g: 0, b: 0, a: 0}
@@ -510,6 +513,9 @@ MonoBehaviour:
   attack1: {fileID: 0}
   attack2: {fileID: 0}
   attack3: {fileID: 0}
+  crush: {fileID: 0}
+  recovery: {fileID: 0}
+  breakEffect: {fileID: 4856430269409844847, guid: 16c9f491c38d054448890ed375725dcf, type: 3}
 --- !u!114 &405871518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,6 +616,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisSpriteRenderer: {fileID: 405871515}
+--- !u!114 &405871525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405871514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce7a67a166600428430e789cb6c268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &405871526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405871514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1162edaf2a3da40be47e6c37db330e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &407039365
 PrefabInstance:
   m_ObjectHideFlags: 0

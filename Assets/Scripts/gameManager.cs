@@ -140,10 +140,11 @@ public class gameManager : MonoBehaviour
             boss.hitted = true;
             boss.Hp -= player.damage;
             boss.healthBar.fillAmount = boss.Hp / boss.MaxHp;
+
             //effector.hitStun(player.damage/30+0.05f/(player.damage*player.damage));
-            /*if (player.damage <= 2) { effector.hitStun(0.05f); }
-            else if (player.damage <= 4) { effector.hitStun(0.15f); }
-            else { effector.hitStun(0.3f); }*/
+            if (player.damage <= 2) { effector.hitStun(0.02f); }
+            else if (player.damage <= 4) { effector.hitStun(0.05f); }
+            else { effector.hitStun(0.1f); }
             //击退boss
             /*if (player.facing) { boss.position+= -1 * player.pushBack;boss.transform.Translate(-boss.moveUnit * player.pushBack, 0, 0); }
             else { boss.position+= player.pushBack; boss.transform.Translate(boss.moveUnit * player.pushBack, 0, 0); }*/

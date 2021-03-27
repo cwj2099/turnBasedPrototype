@@ -9,12 +9,13 @@ public class Boss2_state_attack2 : Boss2_state
     public override void EnterState(Boss2_controller boss)
     {
         boss.thisAnim.Play("Attack2Pre");
-        boss.turns = 12;
+        boss.turns = 10;
         boss.waitTurns = 5;
-        boss.moveTurns = 5;
-        boss.attackTurns = 5;
+        boss.moveTurns = 3;
+        boss.attackTurns = 3;
         boss.attackRange = -2;
         boss.pushBack = 1;
+
         
     }
 
@@ -22,11 +23,11 @@ public class Boss2_state_attack2 : Boss2_state
     {
         if (boss.waitTurns > 1)
         {
-            boss.thisSpriteRenderer.flipX = boss.player.thisSpriteRenderer.flipX;
+            boss.thisSpriteRenderer.flipX = (boss.position < boss.player.position);
             boss.facing = boss.thisSpriteRenderer.flipX;
             if (boss.thisSpriteRenderer.flipX) { boss.speed = 1; } else { boss.speed = -1; }
         }
-        if (boss.turns == 7&&ef==null)
+        /*if (boss.turns == 7&&ef==null)
         {
             ef = Instantiate(effect);
             ef.gameObject.GetComponent<SpriteRenderer>().flipX = boss.thisSpriteRenderer.flipX;
@@ -34,7 +35,7 @@ public class Boss2_state_attack2 : Boss2_state
         if (ef != null)
         {
             ef.transform.position = boss.gameObject.transform.position;
-        }
+        }*/
         if (boss.turns == 0)
         {
             boss.ChangeState(boss.idle);

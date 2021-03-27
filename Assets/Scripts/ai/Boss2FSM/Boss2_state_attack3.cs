@@ -20,8 +20,9 @@ public class Boss2_state_attack3 : Boss2_state
     {
         if (boss.thisAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack3Pre"))
         {
-            
-            //boss.transform.rotation = new Quaternion(0, boss.transform.rotation.y + 180 * Time.deltaTime, 0,0);
+
+            boss.transform.rotation = Quaternion.Euler(0, boss.transform.rotation.y + 1000000 * Time.deltaTime,0 );
+            //Debug.Log(boss.transform.rotation.y);
             if (boss.waitTurns == 1)
             {
                 boss.invicible = true;
@@ -62,6 +63,6 @@ public class Boss2_state_attack3 : Boss2_state
 
     public override void LeaveState(Boss2_controller boss)
     {
-
+        boss.transform.position = new Vector3(boss.transform.position.x, 0, boss.transform.position.z);
     }
 }

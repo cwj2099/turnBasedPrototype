@@ -10,6 +10,9 @@ public class Messenger : MonoBehaviour
     public Vector3 PlayerPosition;
     public int CamLocation;
     public bool[] blockCleared;
+    public bool[] EventTriggered;
+    public bool battled = false;
+    public bool won = false;
     // Start is called before the first frame update
     void Start()
     {

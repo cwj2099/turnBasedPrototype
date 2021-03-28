@@ -10,7 +10,7 @@ public class dialogueManager : MonoBehaviour
     public Text diaText;
     public Animator anim;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         sentences = new Queue<string>();
 

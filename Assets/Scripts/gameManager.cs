@@ -92,9 +92,12 @@ public class gameManager : MonoBehaviour
         }
         else if (gameOver && counter0 <= 0)
         {
+            Messenger mes = FindObjectOfType<Messenger>();
+            mes.battled = true;
             effector.end();
             if (playerWin)
             {
+                mes.won = true;
                 if (gameObject.GetComponent<BattleEnds>())
                 {
                     gameObject.GetComponent<BattleEnds>().Event();
@@ -103,6 +106,7 @@ public class gameManager : MonoBehaviour
             }
             else
             {
+                mes.won = false;
                 SceneManager.LoadScene("out1");
             }
         }

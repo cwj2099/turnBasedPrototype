@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockEvent : MonoBehaviour
 {
     Messenger Mes;
+    CameraController Cam;
     public int index;
     public GameObject[] preBlock;
     public GameObject[] postBlock;
@@ -15,6 +16,7 @@ public class BlockEvent : MonoBehaviour
     void Start()
     {
         Mes= FindObjectOfType<Messenger>();
+        Cam = FindObjectOfType<CameraController>();
     }
 
     // Update is called once per frame
@@ -22,11 +24,11 @@ public class BlockEvent : MonoBehaviour
     {
         foreach (GameObject ob in preBlock)
         {
-            ob.SetActive(!Mes.blockCleared[index]);
+            ob.SetActive((!Mes.blockCleared[index])&&Cam.locators[Cam.location]==thisLocator.gameObject);
         }
         foreach (GameObject ob in postBlock)
         {
-            ob.SetActive(Mes.blockCleared[index]);
+            ob.SetActive((Mes.blockCleared[index] && Cam.locators[Cam.location] == thisLocator.gameObject));
         }
 
         thisLocator.noRight = (!Mes.blockCleared[index]&&blockRight);

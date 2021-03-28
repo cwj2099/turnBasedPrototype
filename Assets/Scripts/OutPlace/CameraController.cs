@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -16,14 +18,24 @@ public class CameraController : MonoBehaviour
     public float changeDuration = 2;
     public float changeCounter = 0;
     public Vector3 camSpeed;
+    public Animator diaAni;
+    Messenger Mes;
+    [SerializeField]
+    UnityEvent[] winTalk;
+    [SerializeField]
+    UnityEvent[] loseTalk;
     // Start is called before the first frame update
     void Start()
     {
         endlocation = locators.Length - 1;
-        Messenger Mes = FindObjectOfType<Messenger>();
+        Mes = FindObjectOfType<Messenger>();
         location = Mes.CamLocation;
         transform.position = Mes.CamPosition;
         player.transform.position = Mes.PlayerPosition;
+        if (Mes.battled) {
+            talkAfterBattle(location);
+        }
+
     }
 
     // Update is called once per frame
@@ -54,7 +66,7 @@ public class CameraController : MonoBehaviour
             }
         }
         //切换后的一些表现更改 make buttons activate when changed
-        if (changeCounter <= 0.01)
+        if (changeCounter <= 0.01&&!diaAni.GetBool("isOpen"))
         {
             //buttons will be on if not border!
             LButton.SetActive(!locators[location].GetComponent<Locator>().noLeft);
@@ -96,4 +108,29 @@ public class CameraController : MonoBehaviour
             player.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
+
+    public void changeScene(string name)
+    {
+        SceneManager.LoadScene(name);
+        Messenger Mes = FindObjectOfType<Messenger>();
+        GameObject Player = GameObject.FindGameObjectsWithTag("Player")[0];
+        Mes.CamLocation = location;
+        Mes.CamPosition = gameObject.transform.position;
+        Mes.PlayerPosition = Player.transform.position;
+    }
+
+    public void talkAfterBattle(int id)
+    {
+        Mes.battled = false;
+        if (Mes.won)
+        {
+            winTalk[id].Invoke();
+        }
+        else
+        {
+            loseTalk[id].Invoke();
+        }
+    }
+
+    
 }

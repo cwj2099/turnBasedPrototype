@@ -929,7 +929,7 @@ MonoBehaviour:
   SlashSound: {fileID: 6849408072617979589}
   HitSound1: {fileID: 404561348233303067}
   HitSound2: {fileID: 8681163103944738102}
-  HitSound3: {fileID: 0}
+  HitSound3: {fileID: 8547137813601803838}
   HurtSound: {fileID: 6921478185163121701}
 --- !u!114 &6456336194694057384
 MonoBehaviour:

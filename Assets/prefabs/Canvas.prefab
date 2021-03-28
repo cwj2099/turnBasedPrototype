@@ -702,7 +702,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6456336194694057384, guid: 1fd2696f3543f8c4bbc398fb918b5e79, type: 3}
         m_TargetAssemblyTypeName: ButtonInput, Assembly-CSharp
         m_MethodName: Thrust
         m_Mode: 1
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6456336194694057384, guid: 1fd2696f3543f8c4bbc398fb918b5e79, type: 3}
         m_TargetAssemblyTypeName: ButtonInput, Assembly-CSharp
         m_MethodName: Left
         m_Mode: 1
@@ -1248,7 +1248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6456336194694057384, guid: 1fd2696f3543f8c4bbc398fb918b5e79, type: 3}
         m_TargetAssemblyTypeName: ButtonInput, Assembly-CSharp
         m_MethodName: Right
         m_Mode: 1
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6456336194694057384, guid: 1fd2696f3543f8c4bbc398fb918b5e79, type: 3}
         m_TargetAssemblyTypeName: ButtonInput, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 1

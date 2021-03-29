@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockEvent : MonoBehaviour
 {
     Messenger Mes;
+    [SerializeField]
     CameraController Cam;
     public int index;
     public GameObject[] preBlock;

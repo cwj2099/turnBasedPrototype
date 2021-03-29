@@ -5,7 +5,13 @@ using UnityEngine.UI;
 
 public class ButtonInput : MonoBehaviour
 {
-    public KeyCode theInput;
+    public KeyCode theInput
+    {
+        set { }
+        get { return (_theInput); }
+    }
+    [SerializeField]
+    KeyCode _theInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,38 +19,55 @@ public class ButtonInput : MonoBehaviour
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        if (_theInput != KeyCode.None)
+        {
+            print(_theInput);
+            //storedInput = bInput.theInput;
+        }
+    }
     void LateUpdate()
     {
-        theInput = KeyCode.None;
+        
+        _theInput = KeyCode.None;
+        
     }
     
     public void Left()
     {
-        theInput = KeyCode.A;
+        //print(theInput);
+        _theInput = KeyCode.A;
     }
 
     public void Right()
     {
-        theInput = KeyCode.D;
+        //print(theInput);
+        _theInput = KeyCode.D;
+        
     }
 
     public void Attack()
     {
-        theInput = KeyCode.J;
+        //print(theInput);
+        _theInput = KeyCode.J;
     }
 
     public void Thrust()
     {
-        theInput = KeyCode.K;
+        //print(theInput);
+        _theInput = KeyCode.K;
     }
 
     public void DashL()
     {
-        theInput = KeyCode.LeftShift;
+        //print(theInput);
+        _theInput = KeyCode.LeftShift;
     }
 
     public void DashR()
     {
-        theInput = KeyCode.L;
+        //print(theInput);
+        _theInput = KeyCode.L;
     }
 }

@@ -906,7 +906,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 6456336195083031708}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693590319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02cd5529d56f25144b73b4f149b36600, type: 3}
   m_Name: 
@@ -1836,11 +1836,11 @@ PrefabInstance:
     - target: {fileID: 5067915434921573164, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 693590324}
+      objectReference: {fileID: 693590323}
     - target: {fileID: 5067915435436817527, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 693590324}
+      objectReference: {fileID: 693590323}
     - target: {fileID: 5067915435552044801, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1848,15 +1848,23 @@ PrefabInstance:
     - target: {fileID: 5067915435707444167, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 693590324}
+      objectReference: {fileID: 693590323}
     - target: {fileID: 5067915436168338662, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 693590324}
+      objectReference: {fileID: 693590323}
+    - target: {fileID: 5067915436212807512, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5067915436212807512, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 693590324}
+      objectReference: {fileID: 693590323}
+    - target: {fileID: 5067915436212807512, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39256e40dcbd4ab458d1f69404c7123b, type: 3}
 --- !u!114 &5067915434829671646 stripped

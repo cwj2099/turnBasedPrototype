@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     public float hurtTurns = 0;//挨打回合
     public float waitTurns = 0;//等待回合
     public KeyCode storedInput; //储存输入
+    public static string input;
 
     public int position = 0;//当前抽象位置
     public int speed = 0;//移动速度
@@ -88,9 +89,11 @@ public class PlayerController : MonoBehaviour
         }
         //还有1回合结束时，允许提前输入
         if (turns<=1) {
+
             if (bInput.theInput != KeyCode.None)
             {
-                storedInput = bInput.theInput;
+                print(bInput.theInput);
+                //storedInput = bInput.theInput;
             }
             else
             {
@@ -100,9 +103,26 @@ public class PlayerController : MonoBehaviour
                     {
                         //your code here
                         storedInput = vKey;
-                        if (storedInput == KeyCode.Mouse0)
+                        /*if (storedInput == KeyCode.Mouse0)
                         {
+                            print("mouse");
                             storedInput = KeyCode.None;
+                        }*/
+                        switch (storedInput)
+                        {
+                            case KeyCode.A:
+                                input = "Left";
+                                break;
+                            case KeyCode.D:
+                                input = "Right";
+                                break;
+                            case KeyCode.J:
+                                input = "Attack";
+                                break;
+                            case KeyCode.K:
+                                input = "Block";
+                                break;
+
                         }
 
                     }
@@ -121,7 +141,7 @@ public class PlayerController : MonoBehaviour
             effector.time_pause();
             //各个变量复位
             speed = 0;attakcing = false;attackRange = 0;invicible = false;
-            if (storedInput==KeyCode.A)
+            if (input== "Left")
             {
                 if(Mathf.Abs(position - boss.position) <= 2&&position>=boss.position&&!boss.invicible)
                 {
@@ -147,7 +167,7 @@ public class PlayerController : MonoBehaviour
 
             }
 
-            if (storedInput == KeyCode.D)
+            if (input == "Right")
             {
                 if (Mathf.Abs(position - boss.position) <= 2 && position <= boss.position && !boss.invicible)
                 {
@@ -193,7 +213,7 @@ public class PlayerController : MonoBehaviour
                 moveTurns = 1   ;
             }*/
 
-            if (storedInput == KeyCode.J)
+            if (input == "Attack")
             {
 
                 if (attackCounter == 0)
@@ -245,9 +265,9 @@ public class PlayerController : MonoBehaviour
                 if (attackCounter == 3) { attackCounter = 0; }
                 
             }
-            else if(storedInput!=KeyCode.None){ attackCounter = 0; }
+            else if(input != null){ attackCounter = 0; }
 
-            if (storedInput == KeyCode.K)
+            if (input == "Block")
             {
                 /*damage = 1;
                 startTurns(2);
@@ -264,7 +284,7 @@ public class PlayerController : MonoBehaviour
                 Instantiate(chargeEffect, transform.position, transform.rotation);
             }
             Mp = Mathf.Min(Mp, 3);
-            storedInput = KeyCode.None;
+            input = null;
         }
 
     }
@@ -329,6 +349,13 @@ public class PlayerController : MonoBehaviour
             if (attackTurns > 0) { attackTurns--; }
             if (invicibleTurns > 0) { invicibleTurns--; }
         }
+    }
+
+    public void GetInput(string key)
+    {
+        input = key;
+        print(key);
+
     }
 }
 

@@ -18,7 +18,7 @@ public class button : MonoBehaviour
     void Update()
     {
         // print(selected);
-        if (Input.GetKeyDown(KeyCode.J)) { GetClicked(); }
+        if (Input.GetKeyDown(KeyCode.Space)) { GetClicked(); }
     }
 
     public virtual void GetClicked()

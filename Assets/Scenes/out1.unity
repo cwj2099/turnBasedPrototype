@@ -684,9 +684,9 @@ MonoBehaviour:
     - "\u4F60\uFF1A\u521A\u624D\u602A\u7269\u5F97\u8868\u73B0\u597D\u5947\u602A"
     - "\u5251\uFF1A \u600E\u4E48"
     - "\u4F60\uFF1A\u53EA\u8981\u6211\u4E0D\u52A8\uFF0C\u4ED6\u4E5F\u4E0D\u4F1A\u52A8"
-    - "\u5251\uFF1A \u56E0\u4E3A\u6211\u662F\u63A7\u5236\u65F6\u95F4\u7684\u795E\u5251\u963F"
+    - "\u5251\uFF1A \u56E0\u4E3A\u6211\u662F\u63A7\u5236\u65F6\u95F4\u7684\u795E\u5251\u554A"
     - "\u5251\uFF1A \u6211\u80FD\u8BA9\u65F6\u95F4\u6682\u505C\u4E0B\u6765\uFF0C\u4E3A\u6218\u6597\u521B\u9020\u80DC\u673A"
-    - "\u4F60\uFF1A\u4E3A\u4EC0\u4E48\u4E0D\u80FD\u53EA\u6682\u505C\u602A\u7269\u5F97\u65F6\u95F4\uFF0C\u8BA9\u6211\u52A8\u5462\uFF1F"
+    - "\u4F60\uFF1A\u90A3\u4E3A\u4EC0\u4E48\u4E0D\u80FD\u53EA\u6682\u505C\u602A\u7269\u5F97\u65F6\u95F4\uFF0C\u53EA\u8BA9\u6211\u4E00\u4EBA\u8BA9\u6211\u52A8\u5462\uFF1F"
     - "\u5251\uFF1A \u5443\u5443\uFF0C\u80FD\u529B\u6709\u9650...\u603B\u4E4B\u8D77\u7801\u4F60\u53EF\u4EE5\u6162\u6162\u601D\u8003\u8BE5\u5E72\u5565\u4E86"
 --- !u!1 &103013225
 GameObject:
@@ -2083,6 +2083,7 @@ MonoBehaviour:
     - "\u4F60\uFF1A \u8981\u600E\u4E48\u624D\u80FD\u6253\u5230\u5899\u4E0A\u5462\uFF1F"
     - "\u5251\uFF1A \u4F60\u8FDE\u780D\u7684\u7B2C\u4E09\u4E0B\u80FD\u591F\u51FB\u9000"
     - "\u5251\uFF1A \u5982\u679C\u654C\u4EBA\u5728\u5899\u8FB9\u65F6\u4F60\u628A\u4ED6\u5F80\u5899\u51FB\u9000\u5C31\u884C\u4E86"
+    - "\u4F60\uFF1A \u539F\u6765\u5982\u6B64\uFF0C\u628A\u654C\u4EBA\u5F15\u5230\u5899\u8FB9\u518D\u780D\u5C31\u884C\u4E86\u5427"
 --- !u!114 &240851547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3170,7 +3171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6379364143920617669, guid: d2969641e8b60e940ac0839144a54ddb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -34
+      value: -12.9
       objectReference: {fileID: 0}
     - target: {fileID: 6379364143923937972, guid: d2969641e8b60e940ac0839144a54ddb, type: 3}
       propertyPath: m_Color.b
@@ -3704,7 +3705,7 @@ MonoBehaviour:
   dia:
     name: 
     sentences:
-    - "\u4F60\uFF1A\u534E\u4E3D\u5F97\u80DC\u5229!"
+    - "\u4F60\uFF1A\u534E\u4E3D\u7684\u80DC\u5229!"
     - "\u5251\uFF1A \u5BF9\u4E86\uFF0C\u4F7F\u7528\u9632\u5FA1\u548C\u9632\u5FA1\u6210\u529F\u90FD\u4F1A\u589E\u52A0\u80FD\u91CF"
     - "\u5251\uFF1A \u6709\u80FD\u91CF\u65F6\u6211\u7684\u653B\u51FB\u4F1A\u66F4\u5389\u5BB3"
     - "\u4F60\uFF1A\u65E9\u5C31\u6CE8\u610F\u5230\u4E86\uFF0C\u53CD\u6B63\u780D\u5C31\u5B8C\u4E8B\u4E86"
@@ -4735,9 +4736,9 @@ MonoBehaviour:
   dia:
     name: 
     sentences:
-    - "\u4F60\uFF1A\u963F\uFF0C\u5C45\u7136\u6454\u4E0B\u6765\u4E86"
+    - "\u4F60\uFF1A\u54CE\u5440\uFF0C\u5C45\u7136\u6454\u4E0B\u6765\u4E86"
     - "\u5251\uFF1A \u6211\u7684\u597D\u4F19\u8BA1\uFF0C\u524D\u9762\u597D\u50CF\u6709\u4E2A\u602A\u7269"
-    - "\u4F60\uFF1A\u8981\u6218\u6597\u4E86\u5417"
+    - "\u4F60\uFF1A\u8981\u548C\u602A\u7269\u6218\u6597\u4E86\u5417"
     - "\u5251\uFF1A \u6CA1\u9519\uFF0C\u53E6\u5916\u8BB0\u4F4F\u7528\u6309\u9632\u5FA1\u952E\u80FD\u62B5\u6321\u654C\u4EBA\u5F97\u653B\u51FB"
 --- !u!114 &484347329
 MonoBehaviour:
@@ -7009,7 +7010,7 @@ MonoBehaviour:
   dia:
     name: 
     sentences:
-    - "\u5251\uFF1A\u4E0D\u4F1A\u771F\u6709\u4EBA\u6253\u4E0D\u8FC7\u77F3\u5934\u628A"
+    - "\u5251\uFF1A\u4E0D\u4F1A\u771F\u6709\u4EBA\u6253\u4E0D\u8FC7\u77F3\u5934\u5427"
     - "\u4F60\uFF1A\u600E\u4E48\u53EF\u80FD"
 --- !u!1 &722691791
 GameObject:
@@ -8149,7 +8150,7 @@ MonoBehaviour:
     name: 
     sentences:
     - "\u4F60\uFF1A\u8FD9\u5BB6\u4F19\u662F\u4E0D\u662F\u6BD4\u521A\u624D\u54EA\u4E2A\u8FD8\u5389\u5BB3\uFF1F"
-    - "\u5251\uFF1A\u6050\u6015\u662F\u8FD9\u6837\u7684\uFF0C\u5C0F\u5FC3\u7684\u6218\u6597\u628A"
+    - "\u5251\uFF1A\u6050\u6015\u662F\u8FD9\u6837\u7684\uFF0C\u5C0F\u5FC3\u7684\u6218\u6597\u5427"
 --- !u!1 &949635892
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,7 +9650,7 @@ MonoBehaviour:
     name: 
     sentences:
     - "\u5251\uFF1A\u5389\u5BB3\u5389\u5BB3\uFF0C\u4F60\u5C45\u7136\u6253\u8D62\u4E86\u77F3\u5934"
-    - "\u4F60\uFF1A\u95ED\u5634\uFF0C\u6211\u4EEC\u7EE7\u7EED\u5F80\u524D\u628A"
+    - "\u4F60\uFF1A\u95ED\u5634\uFF0C\u6211\u4EEC\u7EE7\u7EED\u524D\u8FDB\u5427"
 --- !u!1 &1251998434
 GameObject:
   m_ObjectHideFlags: 0
@@ -9806,18 +9807,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 266
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: J
+  m_Text: SPACE
 --- !u!222 &1277658777
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9861,8 +9862,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -128.40009, y: 1.5999966}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -167, y: 1.5999966}
+  m_SizeDelta: {x: 150, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318629819
 MonoBehaviour:
@@ -9877,15 +9878,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9950,7 +9951,7 @@ MonoBehaviour:
     sentences:
     - "\u5251\uFF1A \u65F6\u95F4\u56DE\u6EAF\uFF01"
     - "\u5251\uFF1A \u8FD9\u5BB6\u4F19\u591A\u4E86\u4E00\u4E9B\u53D8\u62DB"
-    - "\u5251\uFF1A \u4E0D\u8981\u4F9D\u8D56\u81EA\u5DF1\u7684\u4E60\u60EF\uFF0C\u5BFB\u627E\u65B0\u5BF9\u7B56\u628A\uFF01"
+    - "\u5251\uFF1A \u4E0D\u8981\u4F9D\u8D56\u81EA\u5DF1\u7684\u4E60\u60EF\uFF0C\u5BFB\u627E\u65B0\u5BF9\u7B56\u5427\uFF01"
 --- !u!1 &1341433514
 GameObject:
   m_ObjectHideFlags: 0
@@ -11997,8 +11998,8 @@ MonoBehaviour:
   dia:
     name: 
     sentences:
-    - "\u5251\uFF1A \u6211\u4EEC\u51FA\u53D1\u628A"
-    - "\u4F60\uFF1A \u4E3A\u4EC0\u4E48\u6211\u8981\u542C\u4E00\u628A\u5251\u8BF4\u8BDD"
+    - "\u5251\uFF1A \u6211\u4EEC\u51FA\u53D1\u5427"
+    - "\u4F60\uFF1A \u4E3A\u4EC0\u4E48\u6211\u8981\u542C\u4E00\u628A\u5251\u8BF4\u8BDD\u5462"
     - "\u5251\uFF1A\u6211\u53EF\u662F\u80FD\u6682\u505C\u65F6\u95F4\u7684\u795E\u5251\uFF0C\u5C0A\u91CD\u70B9"
     - "\u5251\uFF1A\u6309\u65B9\u5411\u6309\u94AE\u79FB\u52A8\u5427"
     - "\u5251\uFF1A\u5982\u679C\u4F60\u5728pc\u4E0A\u73A9\u8FD9\u4E2A\u6E38\u620F\uFF0C\u6309\u4E0B\u5BF9\u5E94\u952E\u76D8\u6309\u952E"
@@ -13486,7 +13487,7 @@ MonoBehaviour:
   dia:
     name: 
     sentences:
-    - "\u4F60\uFF1A\u534E\u4E3D\u5F97\u80DC\u5229!"
+    - "\u4F60\uFF1A\u534E\u4E3D\u7684\u80DC\u5229!"
     - "\u5251\uFF1A \u6709\u597D\u597D\u8FD0\u7528\u51FB\u9000\u6280\u5DE7\u5417\uFF1F"
 --- !u!1 &1851139466
 GameObject:
